@@ -8,7 +8,6 @@ export default {
         charPostions.forEach(charPosition => {
             characterArr[charPosition] = '<span class=' + className +'>' + characterArr[charPosition] + '</span>'
         })
-        console.log(characterArr)
         return characterArr.join('')
     }
 }

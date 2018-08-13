@@ -7,7 +7,7 @@ module.exports = {
     'nav.ecosystem': '生态',
     'nav.token': '通证',
     'nav.nextSteps': '未来',
-    'nav.roadmap': '蓝图',
+    'nav.roadmap': '路线图',
     'nav.team': '团队',
     'nav.partners': '伙伴',
     'banner.text1': '让天下没有难开的交易所，',
@@ -53,7 +53,7 @@ module.exports = {
     'development.3.text': '⽀持区块链二层网络，如闪电网络',
     'development.4.text': '引⼊稳定货币机制',
     'development.5.text': '采⽤插件化的智能合约',
-    'roadmap.title': '蓝图',
+    'roadmap.title': '路线图',
     'roadmap.upcomingEvent': '起草白皮书',
     'team.title': '团队介绍',
     'partners.title': '合作伙伴 / 顾问'
