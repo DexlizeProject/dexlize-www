@@ -1,0 +1,54 @@
+.section-team{
+  .section-title{
+    margin-top: 100px;
+    margin-bottom: 64px;
+  }
+  .team-item{
+    text-align: center;
+    margin-bottom: 32px;
+    .team-item-img{
+      margin-bottom: 20px;
+      img{
+        width: 100%;
+      }
+    }
+    .team-item-name{
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+    .team-item-title{
+      font-size: 14px;
+      min-height: 72px;
+    }
+    .team-item-img-empty{
+      border: 1px dashed #3a478f;
+      width: 100%;
+      padding-top: 100%;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .section-team{
+    .team-item{
+      margin-bottom: 12px;
+      .team-item-img{
+        margin-bottom: 4px;
+      }
+      .team-item-img-empty{
+        margin-bottom: 4px;
+      }
+      .team-item-name{
+        font-size: 14px;
+        min-height: 16px;
+      }
+      .team-item-title{
+        //TODO 不删掉title则空间不够
+        display: none;
+        font-size: 12px;
+      }
+    }
+  }
+}

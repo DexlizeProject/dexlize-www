@@ -1,0 +1,76 @@
+.section-roadmap{
+  color: #fff;
+  background: url('/static/bg/section-roadmap.png') center top no-repeat;
+  background-size: cover;
+  text-align: center;
+  .icon-square-4{
+    position: absolute;
+    right: 64px;
+    bottom: 64px;
+  }
+  .section-title{
+    margin-top: 320px;
+    margin-bottom: 105px;
+  }
+  .roadmap-title-active{
+    color: #6babff;
+  }
+  .timeline-item{
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  .time-dot{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .time-bar{
+    width: 100px;
+    height: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    background: -webkit-linear-gradient(left, #0f77ff, #fff); /* Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #0f77ff,#fff); /* Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #0f77ff, #fff); /* Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #0f77ff, #fff); /* 标准语法 */
+  }
+  .time-date{
+    margin-top: 8px;
+    font-size: 18px;
+  }
+  .timeline-upcoming {
+    text-align: left;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    padding: 24px 20px;
+    font-size: 18px;
+    background: #fff;
+    margin-bottom: 40px;
+    .timeline-upcoming-date {
+      color: #0f77ff;
+      margin-bottom: 8px;
+    }
+    .timeline-upcoming-event {
+      color: #3a478f;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .section-roadmap{
+    .icon-square-4{
+      width: 87px;
+      height: 100px;
+      bottom:64px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+}

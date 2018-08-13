@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'lato-black';
+  src: url('/static/font/lato-black.ttf');
+}
+
+@font-face {
+  font-family: 'lato-black-italic';
+  src: url('/static/font/lato-black-italic.ttf');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #3a478f;
+  font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-size: 14px;
+}
+
+a {
+  color: #3a478f;
+}
+
+a:hover {
+  color: #3a478f;
+}
+
+ul{
+  margin: 0;
+}
+
+li{
+  margin: 0;
+  list-style: none;
+}
+
+.section-wrap {
+  width: 100%;
+}
+
+.section-title {
+  font-family: 'lato-black-italic';
+  font-size: 64px;
+  .section-title-bright{
+    color : #0f77ff;
+  }
+}
+
+.section-text {
+  font-size: 16px;
+  //color: #9b9b9b;
+  line-height: 24px;
+}
+
+img {
+  margin-bottom: 0 !important;
+}
+
+:focus{
+  outline: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.mr10{
+  margin-right: 10px;
+}
+
+.ml10{
+  margin-left: 10px;
+}
+
+.fp-tableCell{
+  display: block;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 28px;
+    text-align: center !important;
+    margin-top: 32px !important;
+    margin-bottom: 32px !important;
+  }
+  .container{
+    //padding-left: 28px;
+    //padding-right: 28px;
+  }
+}

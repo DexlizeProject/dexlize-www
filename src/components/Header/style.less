@@ -1,0 +1,46 @@
+.header{
+  color: #3a478f;
+  padding-top: 32px;
+  padding-bottom: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+  .icon-logo{
+    vertical-align: middle;
+  }
+  .header-nav-wrap{
+    display: inline-block;
+  }
+  .header-nav{
+    font-size: 16px;
+    margin-left: 76px;
+    display: inline-block;
+    li{
+      display: inline-block;
+      margin-right: 20px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  .language-nav{
+    float: right;
+    margin-top: 6px;
+    .icon-lang-en, .icon-lang-zh{
+      margin-right: 8px;
+    }
+    .glyphicon{
+      margin-left: 4px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header{
+    .header-nav-wrap{
+      display: none;
+    }
+  }
+}

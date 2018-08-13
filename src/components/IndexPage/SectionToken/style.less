@@ -1,0 +1,64 @@
+.section-token{
+  background: #f8fafb;
+  .icon-square-3{
+    position: absolute;
+    left: 64px;
+    bottom: 64px;
+  }
+  .section-title{
+    margin-top: 160px;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  .token-text{
+    font-size: 18px;
+    margin-bottom: 100px;
+  }
+  .token-transform{
+    font-family: 'lato-black';
+    font-size: 24px;
+    border: 1px dashed #3a478f;
+    padding: 25px 35px;
+    li{
+      margin-bottom: 12px;
+    }
+  }
+  .token-figure-title{
+    font-family: 'lato-black';
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .token-figure-icon{
+    text-align: right;
+    .icon-token-figure{
+      background-repeat: no-repeat;
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px){
+  .section-token{
+    .icon-square-3{
+      width: 87px;
+      height: 100px;
+      bottom:58px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    .token-text{
+      margin-bottom: 32px;
+    }
+    .token-transform{
+      font-size: 18px;
+      padding: 32px 32px;
+    }
+    // TODO 空间不够，是否去掉
+    .token-figure-wrap{
+      display: none;
+    }
+
+  }
+}
