@@ -25,7 +25,7 @@ export default class SectionToken extends React.Component{
                         </div>
                         <div className="token-transform">
                             <ul>
-                                <li>x  <FormattedMessage id="token.totalTokenIssued"/> = 1B DXL</li>
+                                <li>-  <FormattedMessage id="token.totalTokenIssued"/> = 1B DXL</li>
                                 <li>1  <FormattedMessage id="token.sale"/>  (23%) = 230M DXL</li>
                                 <li>2  <FormattedMessage id="token.team"/>  (20%) = 200M DXL</li>
                                 <li>3  <FormattedMessage id="token.foundation"/>  (22%) = 220M DXL</li>

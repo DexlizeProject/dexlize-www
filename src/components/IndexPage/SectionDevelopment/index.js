@@ -19,11 +19,11 @@ export default class SectionDevelopment extends React.Component{
                 </div>
                 <div className="development-list">
                     <ul>
-                        <li>x <FormattedMessage id="development.1.text"/></li>
-                        <li>x <FormattedMessage id="development.2.text"/></li>
-                        <li>x <FormattedMessage id="development.3.text"/></li>
-                        <li>x <FormattedMessage id="development.4.text"/></li>
-                        <li>x <FormattedMessage id="development.5.text"/></li>
+                        <li><FormattedMessage id="development.1.text"/></li>
+                        <li><FormattedMessage id="development.2.text"/></li>
+                        <li><FormattedMessage id="development.3.text"/></li>
+                        <li><FormattedMessage id="development.4.text"/></li>
+                        <li><FormattedMessage id="development.5.text"/></li>
                     </ul>
                 </div>
             </div>
