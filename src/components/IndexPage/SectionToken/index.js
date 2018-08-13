@@ -16,7 +16,6 @@ export default class SectionToken extends React.Component{
                 <span className="icon icon-square-3"/>
                 <div className="section-title">
                     <FormattedMessage id="token.title"/>
-                    T<span className="section-title-bright">O</span>KEN
                 </div>
                 <div className="row">
                     <div className="col-sm-6">

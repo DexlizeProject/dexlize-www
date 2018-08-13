@@ -8,7 +8,6 @@ export default class SectionEcosystem extends React.Component{
             <div className="container">
                 <div className="section-title">
                     <FormattedMessage id="ecosystem.title"/>
-                    PR<span className="section-title-bright">O</span>TOCOL EC<span className="section-title-bright">O</span>SYSTEM
                 </div>
                 <div className="row">
                     <div className="col-sm-6">
