@@ -7,8 +7,8 @@ export default class SectionBanner extends React.Component {
         return (
             <div className="container">
                 <div className="banner-title">
-                    <FormattedMessage id="banner.text1"/> <br/>
-                    <FormattedMessage id="banner.text2"/>
+                    <FormattedMessage id="banner.text1"/><span className="section-title-bright">,</span> <br/>
+                    <FormattedMessage id="banner.text2"/><span className="section-title-bright">.</span>
                 </div>
                 <button className="banner-btn"><FormattedMessage id="banner.viewWhitepaper"/></button>
             </div>
