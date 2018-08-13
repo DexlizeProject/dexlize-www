@@ -14,8 +14,7 @@ export default class SectionTeam extends React.Component {
                     <div className="col-md-2 col-sm-3 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
-                                <img src="/static/team/team-1.png"/>
-                                {/*<span className="icon icon-team-1"/>*/}
+                                <img src="/static/icon/team/team-1.png"/>
                             </div>
                             <div className="team-item-name">Jamie Cheng</div>
                             <div className="team-item-title">
@@ -27,7 +26,7 @@ export default class SectionTeam extends React.Component {
                     <div className="col-md-2 col-sm-3 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
-                                <img src="/static/team/team-2.png"/>
+                                <img src="/static/icon/team/team-2.png"/>
 
                             </div>
                             <div className="team-item-name">Harry Hong</div>
@@ -40,7 +39,7 @@ export default class SectionTeam extends React.Component {
                     <div className="col-md-2 col-sm-3 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
-                                <img src="/static/team/team-3.png"/>
+                                <img src="/static/icon/team/team-3.png"/>
                             </div>
                             <div className="team-item-name">Terrence Ge</div>
                             <div className="team-item-title">
@@ -52,7 +51,7 @@ export default class SectionTeam extends React.Component {
                     <div className="col-md-2 col-sm-3 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
-                                <img src="/static/team/team-4.png"/>
+                                <img src="/static/icon/team/team-4.png"/>
                             </div>
                             <div className="team-item-name">Errance Liu</div>
                             <div className="team-item-title">
@@ -64,7 +63,7 @@ export default class SectionTeam extends React.Component {
                     <div className="col-md-2 col-sm-3 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
-                                <img src="/static/team/team-5.png"/>
+                                <img src="/static/icon/team/team-5.png"/>
                             </div>
                             <div className="team-item-name">Thomas Yu</div>
                             <div className="team-item-title">
@@ -76,7 +75,7 @@ export default class SectionTeam extends React.Component {
                     <div className="col-md-2 col-sm-3 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
-                                <img src="/static/team/team-6.png"/>
+                                <img src="/static/icon/team/team-6.png"/>
                             </div>
                             <div className="team-item-name">Meon Wu</div>
                             <div className="team-item-title">
@@ -88,7 +87,7 @@ export default class SectionTeam extends React.Component {
                     <div className="col-md-2 col-sm-3 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
-                                <img src="/static/team/team-7.png"/>
+                                <img src="/static/icon/team/team-7.png"/>
                             </div>
                             <div className="team-item-name">Leo Liu</div>
                             <div className="team-item-title">
@@ -101,7 +100,7 @@ export default class SectionTeam extends React.Component {
                     <div className="col-md-2 col-sm-3 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
-                                <img src="/static/team/team-8.png"/>
+                                <img src="/static/icon/team/team-8.png"/>
 
                             </div>
                             <div className="team-item-name">Neil Joseph</div>
@@ -114,7 +113,7 @@ export default class SectionTeam extends React.Component {
                     <div className="col-md-2 col-sm-3 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
-                                <img src="/static/team/team-9.png"/>
+                                <img src="/static/icon/team/team-9.png"/>
 
                             </div>
                             <div className="team-item-name">Union Rhee</div>
@@ -127,7 +126,7 @@ export default class SectionTeam extends React.Component {
                     <div className="col-md-2 col-sm-3 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
-                                <img src="/static/team/team-10.png"/>
+                                <img src="/static/icon/team/team-10.png"/>
                             </div>
                             <div className="team-item-name">Ellen Le</div>
                             <div className="team-item-title">
@@ -138,7 +137,7 @@ export default class SectionTeam extends React.Component {
                     <div className="col-md-2 col-sm-3 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
-                                <img src="/static/team/team-11.png"/>
+                                <img src="/static/icon/team/team-11.png"/>
                             </div>
                             <div className="team-item-name">Catherine Lu</div>
                             <div className="team-item-title">
