@@ -4,7 +4,6 @@ export default {
             className = 'section-title-bright'
         }
         let characterArr = str.split('')
-        console.log(characterArr)
         charPostions.forEach(charPosition => {
             characterArr[charPosition] = '<span class=' + className +'>' + characterArr[charPosition] + '</span>'
         })

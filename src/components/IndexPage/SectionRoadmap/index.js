@@ -3,6 +3,12 @@ import {FormattedMessage} from 'react-intl'
 import './style.less'
 
 export default class SectionRoadmap extends React.Component{
+    constructor(props){
+        super(props)
+        this.state = {
+
+        }
+    }
     render () {
         return (
             <div className="container">
@@ -12,18 +18,20 @@ export default class SectionRoadmap extends React.Component{
                 </div>
                 <div className="timeline">
                     <div className="timeline-item">
-                        <div className="time-dot mr10"/>
-                        <div className="time-bar mr10"/>
-                        <div className="time-date text-left">2017 Dec</div>
+                        <div className="timeline-item-normal">
+                            <div className="time-dot mr10"/>
+                            <div className="time-bar mr10"/>
+                            <div className="time-date text-left">2017 Dec</div>
+                        </div>
+                        <div className="timeline-item-active">
+                            <div className="timeline-upcoming-date">2018 July</div>
+                            <div className="timeline-upcoming-event"><FormattedMessage id="roadmap.upcomingEvent"/></div>
+                        </div>
                     </div>
                     <div className="timeline-item">
                         <div className="time-dot mr10"/>
                         <div className="time-bar mr10"/>
                         <div className="time-date text-left">2018 July</div>
-                    </div>
-                    <div className="timeline-upcoming">
-                        <div className="timeline-upcoming-date">2018 July</div>
-                        <div className="timeline-upcoming-event"><FormattedMessage id="roadmap.upcomingEvent"/></div>
                     </div>
                     <div className="timeline-item">
                         <div className="time-bar ml10"/>
