@@ -63,6 +63,12 @@ class IndexPage extends React.Component {
                     document.getElementsByClassName('header')[0].style.display = 'none';
                     document.getElementsByClassName('navigation-list')[0].style.display = 'block';
                 }
+                //以下代码在出设计稿后，与以上段落合并
+                if(destination.anchor === 'team'){
+                    document.getElementsByClassName('navigation-list')[0].style.display = 'none';
+                }else{
+                    document.getElementsByClassName('navigation-list')[0].style.display = 'block';
+                }
             }
         })
     }

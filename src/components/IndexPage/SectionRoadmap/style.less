@@ -15,17 +15,7 @@
   .roadmap-title-active {
     color: #6babff;
   }
-  .timeline-item {
-    display: inline-block;
-    position: relative;
-    margin-bottom: 40px;
-    text-align: left;
-    &:hover {
-      .timeline-item-active {
-        display: inline-block;
-      }
-    }
-  }
+
   .time-dot {
     width: 30px;
     height: 30px;
@@ -33,7 +23,6 @@
     background: #fff;
     display: inline-block;
     vertical-align: middle;
-    //margin-left: 20px;
   }
   .time-bar {
     width: 100px;
@@ -51,26 +40,43 @@
     text-align: left;
   }
   .timeline-item-active {
-    display: none;
+    transition: opacity .2s ease-out;
+    opacity: 0;
     position: absolute;
-    top: 72px;
-    left: -32px;
+    top: 88px;
+    left: -100px;
     z-index: 100;
     text-align: left;
     vertical-align: middle;
-    width: 150px;
-    height: auto;
+    width: 256px;
     border-radius: 20px;
     padding: 24px 20px;
     font-size: 18px;
     background: #fff;
     margin-bottom: 40px;
+    .icon-triangle{
+      position: absolute;
+      top: -12px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
     .timeline-upcoming-date {
       color: #0f77ff;
       margin-bottom: 8px;
     }
     .timeline-upcoming-event {
       color: #3a478f;
+    }
+  }
+  .timeline-item {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    &:hover {
+      .timeline-item-active {
+        opacity: 1;
+      }
     }
   }
 }
@@ -93,6 +99,7 @@
       }
 
       .timeline-item-active {
+        opacity: 1;
         border-radius: 10px;
         font-size: 14px;
         display: block;
@@ -102,6 +109,9 @@
         top: 0;
         width: 100%;
         margin-bottom: 12px;
+        .icon-triangle{
+          display: none;
+        }
       }
     }
   }
