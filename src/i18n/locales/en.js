@@ -1,7 +1,7 @@
 module.exports = {
     'title': 'Dexlize Webpage',
     'welcome': 'Welcome to Dexlize',
-    'nav.whatis': 'What is?',
+    'nav.whatis': 'What is',
     'nav.features': 'Features',
     'nav.structure': 'Structure',
     'nav.ecosystem': 'Ecosystem',
@@ -10,6 +10,7 @@ module.exports = {
     'nav.roadmap': 'Roadmap',
     'nav.team': 'Team',
     'nav.partners': 'Partners',
+    'nav.subscribe': 'Subscribe',
     'banner.text1': 'DEX-lize Your Exchange',
     'banner.text2': 'Dexlize',
     'banner.viewWhitepaper': 'View Whitepaper',

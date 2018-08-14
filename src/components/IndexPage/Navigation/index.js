@@ -43,16 +43,16 @@ export default class Navigation extends React.Component {
                             <div className="navigation-circle-active"/>
                         </div>
                         <FormattedMessage id="nav.roadmap"/></a></li>
-                    <li data-menuanchor="team"><a href="#team">
-                        <div className="navigation-circle">
-                            <div className="navigation-circle-active"/>
-                        </div>
-                        <FormattedMessage id="nav.team"/></a></li>
-                    <li data-menuanchor="partners"><a href="#partners">
-                        <div className="navigation-circle">
-                            <div className="navigation-circle-active"/>
-                        </div>
-                        <FormattedMessage id="nav.partners"/></a></li>
+                    {/*<li data-menuanchor="team"><a href="#team">*/}
+                        {/*<div className="navigation-circle">*/}
+                            {/*<div className="navigation-circle-active"/>*/}
+                        {/*</div>*/}
+                        {/*<FormattedMessage id="nav.team"/></a></li>*/}
+                    {/*<li data-menuanchor="partners"><a href="#partners">*/}
+                        {/*<div className="navigation-circle">*/}
+                            {/*<div className="navigation-circle-active"/>*/}
+                        {/*</div>*/}
+                        {/*<FormattedMessage id="nav.partners"/></a></li>*/}
                 </ul>
             </nav>
         )

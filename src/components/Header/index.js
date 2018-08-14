@@ -20,6 +20,7 @@ export default class Header extends React.Component {
                         <li><a href="#roadmap"><FormattedMessage id="nav.roadmap"/></a></li>
                         <li><a href="#team"><FormattedMessage id="nav.team"/></a></li>
                         <li><a href="#partners"><FormattedMessage id="nav.partners"/></a></li>
+                        <li><a href="#subscribe"><FormattedMessage id="nav.subscribe"/></a></li>
                     </ul>
                 </div>
                 <div className="language-nav">

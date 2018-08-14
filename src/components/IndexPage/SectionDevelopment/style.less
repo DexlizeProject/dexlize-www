@@ -8,18 +8,29 @@
     margin-bottom: 24px;
   }
   .development-text{
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 40px;
   }
-  .development-list{
+  .development-list-wrap{
     text-align: left;
     font-family: 'lato-black';
-    font-size: 24px;
+    font-size: 18px;
     border: 1px dashed #3a478f;
-    padding: 25px 0 0 194px;
+    padding: 25px 0 0 400px;
+    .development-list{
+      margin:0 auto;
+    }
     li{
       margin-bottom: 12px;
       list-style: disc;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .section-development{
+    .development-list-wrap{
+      padding: 16px 8px 16px 120px;
     }
   }
 }
@@ -33,9 +44,8 @@
     .section-title{
       margin-top: 0 !important;
     }
-    .development-list{
+    .development-list-wrap{
       padding: 16px 8px 16px 32px;
-      font-size: 18px;
     }
   }
 }

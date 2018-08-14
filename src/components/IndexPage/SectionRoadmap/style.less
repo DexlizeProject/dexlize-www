@@ -1,32 +1,32 @@
-.section-roadmap{
+.section-roadmap {
   color: #fff;
   background: url('/static/bg/section-roadmap.jpg') center top no-repeat;
   background-size: cover;
   text-align: center;
-  .icon-square-4{
+  .icon-square-4 {
     position: absolute;
     right: 64px;
     bottom: 64px;
   }
-  .section-title{
+  .section-title {
     margin-top: 256px;
     margin-bottom: 80px;
   }
-  .roadmap-title-active{
+  .roadmap-title-active {
     color: #6babff;
   }
-  .timeline-item{
+  .timeline-item {
     display: inline-block;
     position: relative;
     margin-bottom: 40px;
     text-align: left;
-    &:hover{
-      .timeline-item-active{
+    &:hover {
+      .timeline-item-active {
         display: inline-block;
       }
     }
   }
-  .time-dot{
+  .time-dot {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -35,17 +35,17 @@
     vertical-align: middle;
     //margin-left: 20px;
   }
-  .time-bar{
+  .time-bar {
     width: 100px;
     height: 5px;
     display: inline-block;
     vertical-align: middle;
     background: -webkit-linear-gradient(left, #0f77ff, #fff); /* Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #0f77ff,#fff); /* Opera 11.1 to 12.0 */
+    background: -o-linear-gradient(right, #0f77ff, #fff); /* Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, #0f77ff, #fff); /* Firefox 3.6 to 15 */
     background: linear-gradient(to right, #0f77ff, #fff); /* 标准语法 */
   }
-  .time-date{
+  .time-date {
     margin-top: 8px;
     font-size: 18px;
     text-align: left;
@@ -55,6 +55,7 @@
     position: absolute;
     top: 72px;
     left: -32px;
+    z-index: 100;
     text-align: left;
     vertical-align: middle;
     width: 150px;
@@ -74,15 +75,34 @@
   }
 }
 
-@media screen and (max-width: 768px){
-  .section-roadmap{
-    .icon-square-4{
+@media screen and (max-width: 768px) {
+  .section-roadmap {
+    .icon-square-4 {
       width: 87px;
       height: 100px;
-      bottom:32px;
+      bottom: 0px;
       left: 0;
       right: 0;
       margin: auto;
+    }
+    .timeline-item{
+      display: block;
+      margin-bottom: 10px;
+      .timeline-item-normal {
+        display: none;
+      }
+
+      .timeline-item-active {
+        border-radius: 10px;
+        font-size: 14px;
+        display: block;
+        position: relative;
+        padding: 10px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin-bottom: 12px;
+      }
     }
   }
 }

@@ -10,6 +10,7 @@ module.exports = {
     'nav.roadmap': '路线图',
     'nav.team': '团队',
     'nav.partners': '伙伴',
+    'nav.subscribe': '订阅',
     'banner.text1': '让天下没有难开的交易所',
     'banner.text2': 'Dexlize',
     'banner.viewWhitepaper': '查看白皮书',

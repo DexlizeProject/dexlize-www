@@ -10,7 +10,7 @@ export default class SectionTeam extends React.Component {
                     <FormattedMessage id="team.title"/>
                 </div>
                 <div className="row">
-                    <div className="col-md-2 col-sm-3 col-xs-4">
+                    <div className="col-md-2 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
                                 <img src="/static/icon/team/team-1.png"/>
@@ -22,7 +22,7 @@ export default class SectionTeam extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-2 col-sm-3 col-xs-4">
+                    <div className="col-md-2 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
                                 <img src="/static/icon/team/team-2.png"/>
@@ -35,7 +35,7 @@ export default class SectionTeam extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-2 col-sm-3 col-xs-4">
+                    <div className="col-md-2 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
                                 <img src="/static/icon/team/team-3.png"/>
@@ -47,7 +47,7 @@ export default class SectionTeam extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-2 col-sm-3 col-xs-4">
+                    <div className="col-md-2 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
                                 <img src="/static/icon/team/team-4.png"/>
@@ -59,7 +59,7 @@ export default class SectionTeam extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-2 col-sm-3 col-xs-4">
+                    <div className="col-md-2 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
                                 <img src="/static/icon/team/team-5.png"/>
@@ -71,7 +71,7 @@ export default class SectionTeam extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-2 col-sm-3 col-xs-4">
+                    <div className="col-md-2 col-xs-4">
                         <div className="team-item">
                             <div className="team-item-img">
                                 <img src="/static/icon/team/team-6.png"/>
