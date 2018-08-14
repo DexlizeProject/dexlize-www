@@ -18,11 +18,11 @@ export default class Navigation extends React.Component {
                             <div className="navigation-circle-active"/>
                         </div>
                         <FormattedMessage id="nav.features"/></a></li>
-                    <li data-menuanchor="structure"><a href="#structure">
+                    <li data-menuanchor="architecture"><a href="#architecture">
                         <div className="navigation-circle">
                             <div className="navigation-circle-active"/>
                         </div>
-                        <FormattedMessage id="nav.structure"/></a></li>
+                        <FormattedMessage id="nav.architecture"/></a></li>
                     <li data-menuanchor="ecosystem"><a href="#ecosystem">
                         <div className="navigation-circle">
                             <div className="navigation-circle-active"/>

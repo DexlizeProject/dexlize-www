@@ -8,7 +8,7 @@ import Navigation from '../components/IndexPage/Navigation'
 import SectionBanner from '../components/IndexPage/SectionBanner'
 import SectionWhatIs from '../components/IndexPage/SectionWhatIs'
 import SectionFeatures from '../components/IndexPage/SectionFeatures'
-import SectionStructure from '../components/IndexPage/SectionStructure'
+import SectionArchitecture from '../components/IndexPage/SectionArchitecture'
 import SectionEcosystem from '../components/IndexPage/SectionEcosystem'
 import SectionToken from '../components/IndexPage/SectionToken'
 import SectionDevelopment from '../components/IndexPage/SectionDevelopment'
@@ -29,7 +29,7 @@ class IndexPage extends React.Component {
         //Change character color in section title
         if(this.state.language === 'en'){
             document.getElementsByClassName('section-features')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-features')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2])
-            document.getElementsByClassName('section-structure')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-structure')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 11])
+            document.getElementsByClassName('section-architecture')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-architecture')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 11])
             document.getElementsByClassName('section-ecosystem')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-ecosystem')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 11])
             document.getElementsByClassName('section-token')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-token')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [3])
             document.getElementsByClassName('section-development')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-development')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2])
@@ -40,7 +40,7 @@ class IndexPage extends React.Component {
 
         }else{
             document.getElementsByClassName('section-features')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-features')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 10])
-            document.getElementsByClassName('section-structure')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-structure')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 10])
+            document.getElementsByClassName('section-architecture')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-architecture')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 10])
             document.getElementsByClassName('section-ecosystem')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-ecosystem')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 10])
             document.getElementsByClassName('section-token')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-token')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [3, 7])
             document.getElementsByClassName('section-development')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-development')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [1])
@@ -52,7 +52,7 @@ class IndexPage extends React.Component {
 
         new fullpage('#fullpage', {
             licenseKey: '887B9707-133D4802-8542264F-8795D5AA',
-            anchors: ['banner', 'whatis', 'features', 'structure', 'ecosystem', 'token', 'development','roadmap', 'team', 'partners'],
+            anchors: ['banner', 'whatis', 'features', 'architecture', 'ecosystem', 'token', 'development','roadmap', 'team', 'partners'],
             menu: '#navigation',
             scrollOverflow: true,
             onLeave: function (origin, destination, direction){
@@ -86,8 +86,8 @@ class IndexPage extends React.Component {
                     <div className="section section-features">
                         <SectionFeatures/>
                     </div>
-                    <div className="section section-structure">
-                        <SectionStructure/>
+                    <div className="section section-architecture">
+                        <SectionArchitecture/>
                     </div>
                     <div className="section section-ecosystem">
                         <SectionEcosystem/>

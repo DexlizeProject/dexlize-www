@@ -13,7 +13,7 @@ export default class Header extends React.Component {
                     <ul className="header-nav">
                         <li><a href="#whatis"><FormattedMessage id="nav.whatis"/>?</a></li>
                         <li><a href="#features"><FormattedMessage id="nav.features"/></a></li>
-                        <li><a href="#structure"><FormattedMessage id="nav.structure"/></a></li>
+                        <li><a href="#architecture"><FormattedMessage id="nav.architecture"/></a></li>
                         <li><a href="#ecosystem"><FormattedMessage id="nav.ecosystem"/></a></li>
                         <li><a href="#token"><FormattedMessage id="nav.token"/></a></li>
                         <li><a href="#development"><FormattedMessage id="nav.nextSteps"/></a></li>
