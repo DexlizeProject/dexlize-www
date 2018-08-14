@@ -56,6 +56,11 @@ module.exports = {
     'roadmap.title': 'Roadmap',
     'roadmap.upcomingEvent': 'Whitepaper Draft',
     'team.title': 'TEAM INTRODUCTION',
-    'partners.title': 'PARTNERS / ADVISORS'
-
+    'partners.title': 'PARTNERS / ADVISORS',
+    'subscribe.title': 'SUBSCRIBE',
+    'email.subscribe': 'Subscribe',
+    'email.sending': 'Subscribing',
+    'email.success': 'Subscribe success, Please check your email to confirm the subscribe',
+    'email.error': 'Subscribe failed, please try again',
+    'email.placeholder': 'Your Email (required)',
 }

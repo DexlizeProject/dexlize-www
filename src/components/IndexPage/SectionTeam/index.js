@@ -8,7 +8,6 @@ export default class SectionTeam extends React.Component {
             <div className="container">
                 <div className="section-title">
                     <FormattedMessage id="team.title"/>
-                    {/*TE<span className="section-title-bright">A</span>M IN<span className="section-title-bright">T</span>RODUCTION*/}
                 </div>
                 <div className="row">
                     <div className="col-md-2 col-sm-3 col-xs-4">
@@ -84,74 +83,74 @@ export default class SectionTeam extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-2 col-sm-3 col-xs-4">
-                        <div className="team-item">
-                            <div className="team-item-img">
-                                <img src="/static/icon/team/team-7.png"/>
-                            </div>
-                            <div className="team-item-name">Leo Liu</div>
-                            <div className="team-item-title">
-                                Full-stack Developer<br/>
-                                iOS / React Native
-                                Engineer
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-2 col-sm-3 col-xs-4">
-                        <div className="team-item">
-                            <div className="team-item-img">
-                                <img src="/static/icon/team/team-8.png"/>
+                    {/*<div className="col-md-2 col-sm-3 col-xs-4">*/}
+                        {/*<div className="team-item">*/}
+                            {/*<div className="team-item-img">*/}
+                                {/*<img src="/static/icon/team/team-7.png"/>*/}
+                            {/*</div>*/}
+                            {/*<div className="team-item-name">Leo Liu</div>*/}
+                            {/*<div className="team-item-title">*/}
+                                {/*Full-stack Developer<br/>*/}
+                                {/*iOS / React Native*/}
+                                {/*Engineer*/}
+                            {/*</div>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
+                    {/*<div className="col-md-2 col-sm-3 col-xs-4">*/}
+                        {/*<div className="team-item">*/}
+                            {/*<div className="team-item-img">*/}
+                                {/*<img src="/static/icon/team/team-8.png"/>*/}
 
-                            </div>
-                            <div className="team-item-name">Neil Joseph</div>
-                            <div className="team-item-title">
-                                React Native Engineer<br/>
-                                Partnership Manager
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-2 col-sm-3 col-xs-4">
-                        <div className="team-item">
-                            <div className="team-item-img">
-                                <img src="/static/icon/team/team-9.png"/>
+                            {/*</div>*/}
+                            {/*<div className="team-item-name">Neil Joseph</div>*/}
+                            {/*<div className="team-item-title">*/}
+                                {/*React Native Engineer<br/>*/}
+                                {/*Partnership Manager*/}
+                            {/*</div>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
+                    {/*<div className="col-md-2 col-sm-3 col-xs-4">*/}
+                        {/*<div className="team-item">*/}
+                            {/*<div className="team-item-img">*/}
+                                {/*<img src="/static/icon/team/team-9.png"/>*/}
 
-                            </div>
-                            <div className="team-item-name">Union Rhee</div>
-                            <div className="team-item-title">
-                                Global Business <br/>
-                                Developer
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-2 col-sm-3 col-xs-4">
-                        <div className="team-item">
-                            <div className="team-item-img">
-                                <img src="/static/icon/team/team-10.png"/>
-                            </div>
-                            <div className="team-item-name">Ellen Le</div>
-                            <div className="team-item-title">
-                                Business Growth Manager
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-2 col-sm-3 col-xs-4">
-                        <div className="team-item">
-                            <div className="team-item-img">
-                                <img src="/static/icon/team/team-11.png"/>
-                            </div>
-                            <div className="team-item-name">Catherine Lu</div>
-                            <div className="team-item-title">
-                                Administrative Assistant
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-2 col-sm-3 col-xs-4">
-                        <div className="team-item">
-                            <div className="team-item-img-empty">
-                            </div>
-                            <div className="team-item-name">Waiting for you</div>
-                        </div>
-                    </div>
+                            {/*</div>*/}
+                            {/*<div className="team-item-name">Union Rhee</div>*/}
+                            {/*<div className="team-item-title">*/}
+                                {/*Global Business <br/>*/}
+                                {/*Developer*/}
+                            {/*</div>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
+                    {/*<div className="col-md-2 col-sm-3 col-xs-4">*/}
+                        {/*<div className="team-item">*/}
+                            {/*<div className="team-item-img">*/}
+                                {/*<img src="/static/icon/team/team-10.png"/>*/}
+                            {/*</div>*/}
+                            {/*<div className="team-item-name">Ellen Le</div>*/}
+                            {/*<div className="team-item-title">*/}
+                                {/*Business Growth Manager*/}
+                            {/*</div>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
+                    {/*<div className="col-md-2 col-sm-3 col-xs-4">*/}
+                        {/*<div className="team-item">*/}
+                            {/*<div className="team-item-img">*/}
+                                {/*<img src="/static/icon/team/team-11.png"/>*/}
+                            {/*</div>*/}
+                            {/*<div className="team-item-name">Catherine Lu</div>*/}
+                            {/*<div className="team-item-title">*/}
+                                {/*Administrative Assistant*/}
+                            {/*</div>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
+                    {/*<div className="col-md-2 col-sm-3 col-xs-4">*/}
+                        {/*<div className="team-item">*/}
+                            {/*<div className="team-item-img-empty">*/}
+                            {/*</div>*/}
+                            {/*<div className="team-item-name">Waiting for you</div>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         )

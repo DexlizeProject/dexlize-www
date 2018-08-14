@@ -15,6 +15,7 @@ import SectionDevelopment from '../components/IndexPage/SectionDevelopment'
 import SectionRoadmap from '../components/IndexPage/SectionRoadmap'
 import SectionTeam from '../components/IndexPage/SectionTeam'
 import SectionPartners from '../components/IndexPage/SectionPartners'
+import SectionSubscribe from '../components/IndexPage/SectionSubscribe'
 import helper from "../helpers";
 
 class IndexPage extends React.Component {
@@ -35,6 +36,8 @@ class IndexPage extends React.Component {
             document.getElementsByClassName('section-roadmap')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-roadmap')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2], 'roadmap-title-active')
             document.getElementsByClassName('section-team')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-team')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 7])
             document.getElementsByClassName('section-partners')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-partners')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 13])
+            document.getElementsByClassName('section-subscribe')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-subscribe')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 5])
+
         }else{
             document.getElementsByClassName('section-features')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-features')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 10])
             document.getElementsByClassName('section-structure')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-structure')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 10])
@@ -44,14 +47,14 @@ class IndexPage extends React.Component {
             document.getElementsByClassName('section-roadmap')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-roadmap')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [1], 'roadmap-title-active')
             document.getElementsByClassName('section-team')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-team')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [1])
             document.getElementsByClassName('section-partners')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-partners')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [1, 8])
+            document.getElementsByClassName('section-subscribe')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-subscribe')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [1])
         }
-
-
 
         new fullpage('#fullpage', {
             licenseKey: '887B9707-133D4802-8542264F-8795D5AA',
             anchors: ['banner', 'whatis', 'features', 'structure', 'ecosystem', 'token', 'development','roadmap', 'team', 'partners'],
             menu: '#navigation',
+            scrollOverflow: true,
             onLeave: function (origin, destination, direction){
                 if(destination.anchor === 'banner'){
                     document.getElementsByClassName('header')[0].style.display = 'block';
@@ -92,15 +95,19 @@ class IndexPage extends React.Component {
                     <div className="section section-roadmap">
                         <SectionRoadmap/>
                     </div>
-                    <div className="section section-team">
-                        <SectionTeam/>
-                    </div>
-                    <div className="section section-partners">
-                        <SectionPartners/>
-                    </div>
                     <div className="section fp-auto-height">
+                        <div className="section-team">
+                            <SectionTeam/>
+                        </div>
+                        <div className="section-partners">
+                            <SectionPartners/>
+                        </div>
+                        <div className="section-subscribe">
+                            <SectionSubscribe/>
+                        </div>
                         <Footer/>
                     </div>
+
                 </div>
             </Layout>
         )

@@ -80,7 +80,7 @@ export default class SectionRoadmap extends React.Component{
                         </div>
                         <div className="timeline-item-active">
                             <div className="timeline-upcoming-date">2019 Jan</div>
-                            <div className="timeline-upcoming-event">Dex 在 EOS 上主网上运行，并完全集成到 BitPortal App 中</div>
+                            <div className="timeline-upcoming-event">Dex 在 EOS 主网上运行，并完全集成到 BitPortal App 中</div>
                         </div>
                     </div>
                 </div>

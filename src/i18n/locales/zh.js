@@ -56,5 +56,11 @@ module.exports = {
     'roadmap.title': '路线图',
     'roadmap.upcomingEvent': '起草白皮书',
     'team.title': '团队介绍',
-    'partners.title': '合作伙伴 / 顾问'
+    'partners.title': '合作伙伴 / 顾问',
+    'subscribe.title': '订阅',
+    'email.subscribe': '订阅',
+    'email.sending': '订阅中',
+    'email.success': '订阅已成功发送，请查收您的邮箱确认订阅',
+    'email.error': '订阅失败，请重试',
+    'email.placeholder': '请输入您的邮箱',
 }

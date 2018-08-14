@@ -41,6 +41,7 @@ module.exports = class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+          <script src="/static/lib/fullpage.js/scrolloverflow.js"/>
           <script src="/static/lib/fullpage.js/fullpage.js"/>
           <script>
             {/*new*/}

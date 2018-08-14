@@ -13,7 +13,8 @@
     "intl": "^1.2.5",
     "less": "^3.8.1",
     "react-helmet": "^5.2.0",
-    "react-intl": "^2.4.0"
+    "react-intl": "^2.4.0",
+    "react-mailchimp-subscribe": "^2.0.2"
   },
   "keywords": [
     "gatsby"

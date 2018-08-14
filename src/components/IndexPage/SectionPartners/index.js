@@ -6,7 +6,6 @@ export default class SectionPartners extends React.Component {
     render() {
         return (
             <div className="container">
-                <span className="icon icon-square-5"/>
                 <div className="section-title">
                     <FormattedMessage id="partners.title"/>
                 </div>
