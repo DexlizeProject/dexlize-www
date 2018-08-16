@@ -14,15 +14,22 @@ export default class SectionBanner extends React.Component {
         if (typeof window !== 'undefined' && window.screen.width > 768) {
 
             $('.icon-banner-block-5').addClass('icon-block-eos').animate({top: '-=24px'}, 400, function () {
-                $('.icon-banner-block-5').removeClass('icon-block-eos').animate({top: '+=24px'}, 400, function () {
+                $('.icon-banner-block-5').animate({top: '+=24px'}, 400, function () {
+                    $(this).removeClass('icon-block-eos');
                     $('.icon-banner-block-4').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
-                        $('.icon-banner-block-4').removeClass('icon-block-bitcoin').animate({top: '+=24px'}, 400, function () {
+                        $('.icon-banner-block-4').animate({top: '+=24px'}, 400, function () {
+                            $(this).removeClass('icon-block-bitcoin');
                             $('.icon-banner-block-3').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
-                                $('.icon-banner-block-3').removeClass('icon-block-bitcoin').animate({top: '+=24px'}, 400, function () {
+                                $('.icon-banner-block-3').animate({top: '+=24px'}, 400, function () {
+                                    $(this).removeClass('icon-block-bitcoin');
+
                                     $('.icon-banner-block-2').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
-                                        $('.icon-banner-block-2').removeClass('icon-block-bitcoin').animate({top: '+=24px'}, 400, function () {
+                                        $('.icon-banner-block-2').animate({top: '+=24px'}, 400, function () {
+                                            $(this).removeClass('icon-block-bitcoin');
+
                                             $('.icon-banner-block-1').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
-                                                $('.icon-banner-block-1').removeClass('icon-block-bitcoin').animate({top: '+=24px'}, 400, function(){
+                                                $('.icon-banner-block-1').animate({top: '+=24px'}, 400, function(){
+                                                    $(this).removeClass('icon-block-bitcoin');
                                                     me.bannerBlockAnimation()
                                                 })
                                             })
