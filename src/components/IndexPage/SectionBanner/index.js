@@ -7,28 +7,53 @@ export default class SectionBanner extends React.Component {
     componentDidMount() {
         this.bannerBlockAnimation();
     }
+
     bannerBlockAnimation() {
         var me = this;
         //电脑端才展示动画
-        if(typeof window !== 'undefined' && window.screen.width > 768){
-            $('.icon-banner-block-3').animate({top: '-=64px'},4000, function(){
-                $('.icon-banner-block-3').animate({top: '+=64px'}, 4000, function (){
-                    //repeat animation
-                    me.bannerBlockAnimation()
+        if (typeof window !== 'undefined' && window.screen.width > 768) {
+
+            $('.icon-banner-block-5').animate({top: '-=24px'}, 400, function () {
+                $('.icon-banner-block-5').animate({top: '+=24px'}, 400, function () {
+                    $('.icon-banner-block-4').animate({top: '-=24px'}, 400, function () {
+                        $('.icon-banner-block-4').animate({top: '+=24px'}, 400, function () {
+                            $('.icon-banner-block-3').animate({top: '-=24px'}, 400, function () {
+                                $('.icon-banner-block-3').animate({top: '+=24px'}, 400, function () {
+                                    $('.icon-banner-block-2').animate({top: '-=24px'}, 400, function () {
+                                        $('.icon-banner-block-2').animate({top: '+=24px'}, 400, function () {
+                                            $('.icon-banner-block-1').animate({top: '-=24px'}, 400, function () {
+                                                $('.icon-banner-block-1').animate({top: '+=24px'}, 400, function(){
+                                                    me.bannerBlockAnimation()
+                                                })
+                                            })
+                                        })
+                                    })
+                                })
+                            })
+                        })
+                    })
                 })
             })
-            $('.icon-banner-block-2').animate({top: '-=48px'},4000, function(){
-                $('.icon-banner-block-2').animate({top: '+=48px'}, 4000)
-            })
-            $('.icon-banner-block-4').animate({top: '-=48px'},4000, function(){
-                $('.icon-banner-block-4').animate({top: '+=48px'}, 4000)
-            })
-            $('.icon-banner-block-1').animate({top: '-=24px'},4000, function(){
-                $('.icon-banner-block-1').animate({top: '+=24px'}, 4000)
-            })
-            $('.icon-banner-block-5').animate({top: '-=24px'},4000, function(){
-                $('.icon-banner-block-5').animate({top: '+=24px'}, 4000)
-            })
+
+            //
+            // $('.icon-banner-block-3').animate({top: '-=64px'},4000, function(){
+            //     $('.icon-banner-block-3').animate({top: '+=64px'}, 4000, function (){
+            //         //repeat animation
+            //         me.bannerBlockAnimation()
+            //     })
+            // })
+            // $('.icon-banner-block-2').animate({top: '-=48px'},4000, function(){
+            //     $('.icon-banner-block-2').animate({top: '+=48px'}, 4000)
+            // })
+            // $('.icon-banner-block-4').animate({top: '-=48px'},4000, function(){
+            //     $('.icon-banner-block-4').animate({top: '+=48px'}, 4000)
+            // })
+            // $('.icon-banner-block-1').animate({top: '-=24px'},4000, function(){
+            //     $('.icon-banner-block-1').animate({top: '+=24px'}, 4000)
+            // })
+            // $('.icon-banner-block-5').animate({top: '-=24px'},4000, function(){
+            //     $('.icon-banner-block-5').animate({top: '+=24px'}, 4000)
+            // })
         }
     }
 
