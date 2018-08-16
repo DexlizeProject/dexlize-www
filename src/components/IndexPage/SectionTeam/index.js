@@ -1,8 +1,21 @@
 import React from 'react'
 import {FormattedMessage} from 'react-intl'
+import $ from 'jquery'
 import './style.less'
 
 export default class SectionTeam extends React.Component {
+    constructor(props){
+        super(props)
+        this.slideToggle = this.slideToggle.bind(this)
+
+    }
+    slideToggle () {
+        const currentGroup = $('.group-1').css('display') === 'block' ? '1' : '2'
+        const nextGroup = currentGroup === '1' ? '2' : '1'
+        $('.group-' + currentGroup).fadeOut(function(){
+            $('.group-' + nextGroup).fadeIn();
+        });
+    }
     render() {
         return (
             <div className="container">
@@ -10,10 +23,10 @@ export default class SectionTeam extends React.Component {
                     <FormattedMessage id="team.title"/>
                 </div>
                 <div className="row">
-                    <div className="col-xs-1">
+                    <div className="icon-left-wrap" onClick={this.slideToggle}>
                         <span className="icon icon-left"/>
                     </div>
-                    <div className="col-xs-10">
+                    <div className="groups">
                         <div className="group-1">
                             <div className="col-md-2 col-xs-4">
                                 <div className="team-item">
@@ -104,7 +117,6 @@ export default class SectionTeam extends React.Component {
                             </div>
                         </div>
                         <div className="group-2">
-
                             <div className="col-md-2 col-sm-3 col-xs-4">
                                 <div className="team-item">
                                     <div className="team-item-img">
@@ -183,7 +195,7 @@ export default class SectionTeam extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xs-1">
+                    <div className="icon-right-wrap" onClick={this.slideToggle}>
                         <span className="icon icon-right"/>
                     </div>
                 </div>

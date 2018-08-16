@@ -1,13 +1,42 @@
 import React from 'react'
 import {FormattedMessage} from 'react-intl'
+import $ from 'jquery'
 import './style.less'
 
 export default class SectionBanner extends React.Component {
+    componentDidMount() {
+        this.bannerBlockAnimation();
+    }
+    bannerBlockAnimation() {
+        var me = this;
+        //电脑端才展示动画
+        if(typeof window !== 'undefined' && window.screen.width > 768){
+            $('.icon-banner-block-3').animate({top: '-=64px'},4000, function(){
+                $('.icon-banner-block-3').animate({top: '+=64px'}, 4000, function (){
+                    //repeat animation
+                    me.bannerBlockAnimation()
+                })
+            })
+            $('.icon-banner-block-2').animate({top: '-=48px'},4000, function(){
+                $('.icon-banner-block-2').animate({top: '+=48px'}, 4000)
+            })
+            $('.icon-banner-block-4').animate({top: '-=48px'},4000, function(){
+                $('.icon-banner-block-4').animate({top: '+=48px'}, 4000)
+            })
+            $('.icon-banner-block-1').animate({top: '-=24px'},4000, function(){
+                $('.icon-banner-block-1').animate({top: '+=24px'}, 4000)
+            })
+            $('.icon-banner-block-5').animate({top: '-=24px'},4000, function(){
+                $('.icon-banner-block-5').animate({top: '+=24px'}, 4000)
+            })
+        }
+    }
+
     render() {
         let whitePaperLink = ''
-        if(typeof localStorage !== 'undefined' && localStorage.getItem('language') == 'en'){
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('language') == 'en') {
             whitePaperLink = 'https://cdn.dexlize.org/static/WhitePaper-EN-compressed-2018-08-14.pdf'
-        }else{
+        } else {
             whitePaperLink = 'https://cdn.dexlize.org/static/WhitePaper-ZH-compressed-2018-08-14.pdf'
         }
         return (
@@ -20,10 +49,13 @@ export default class SectionBanner extends React.Component {
                     <button className="banner-btn"><FormattedMessage id="banner.viewWhitepaper"/></button>
                 </a>
                 <div className="banner-blocks">
+                    <span className="icon icon-banner-block-group-1"/>
                     <span className="icon icon-banner-block-1"/>
-                    <span className="icon icon-banner-block"/>
                     <span className="icon icon-banner-block-2"/>
-
+                    <span className="icon icon-banner-block-3"/>
+                    <span className="icon icon-banner-block-4"/>
+                    <span className="icon icon-banner-block-5"/>
+                    <span className="icon icon-banner-block-group-2"/>
                 </div>
             </div>
         )

@@ -41,24 +41,38 @@
 
 @media screen and (max-width: 768px){
   .section-token{
+    text-align: center;
+    .section-title{
+      margin-top: 64px !important;
+      margin-bottom: 30px !important;
+    }
     .icon-square-3{
-      width: 87px;
-      height: 100px;
-      bottom:58px;
-      left: 0;
-      right: 0;
-      margin: auto;
+      display: none;
+      //width: 87px;
+      //height: 100px;
+      //bottom:58px;
+      //left: 0;
+      //right: 0;
+      //margin: auto;
     }
     .token-text{
-      margin-bottom: 32px;
+      margin-bottom: 16px;
     }
     .token-transform{
-      font-size: 18px;
-      padding: 32px 32px;
-    }
-    // TODO 空间不够，是否去掉
-    .token-figure-wrap{
       display: none;
+    }
+    .development-list-wrap{
+      display: none;
+    }
+    .token-figure-wrap{
+      //float: none;
+      .token-figure-title{
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .icon{
+        width: 100%;
+      }
     }
 
   }

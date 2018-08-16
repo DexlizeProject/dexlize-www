@@ -11,6 +11,7 @@
     "gatsby-plugin-less": "^1.1.8",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "intl": "^1.2.5",
+    "jquery": "^1.12.4",
     "less": "^3.8.1",
     "react-helmet": "^5.2.0",
     "react-intl": "^2.4.0",

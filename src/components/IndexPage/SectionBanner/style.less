@@ -1,5 +1,5 @@
 .section-banner{
-  background: url('/static/bg/section-banner.jpg') center top no-repeat;
+  background: url('/static/bg/section-banner.png') center top no-repeat;
   background-size: cover;
   .banner-title{
     font-family: 'lato-black';
@@ -20,10 +20,52 @@
     background: #0f77ff;
   }
   .banner-blocks{
-    display: none;
     position: absolute;
-    bottom: 120px;
-    right: 120px;
+    width: 900px;
+    bottom: 520px;
+    right: 130px;
+    .icon-banner-block-group-1{
+      left: 0;
+      top: 0;
+      position: absolute;
+      z-index: 30;
+    }
+    .icon-banner-block-group-2{
+      left: 380px;
+      top: 70px;
+      position: absolute;
+      z-index: 36;
+    }
+    .icon-banner-block-1{
+      position: absolute;
+      left: 585px;
+      top: 16px;
+      z-index: 31;
+    }
+    .icon-banner-block-2{
+      position: absolute;
+      left: 485px;
+      top: 76px;
+      z-index: 32;
+    }
+    .icon-banner-block-3{
+      position: absolute;
+      left: 385px;
+      top: 136px;
+      z-index: 33;
+    }
+    .icon-banner-block-4{
+      position: absolute;
+      left: 285px;
+      top: 196px;
+      z-index: 34;
+    }
+    .icon-banner-block-5{
+      position: absolute;
+      left: 185px;
+      top: 256px;
+      z-index: 35;
+    }
   }
   .section-title-bright{
     color : #0f77ff;
@@ -32,6 +74,10 @@
 
 @media screen and (max-width: 768px) {
   .section-banner{
+    background: url('/static/bg/section-banner.jpg') center top no-repeat;
+    .banner-blocks{
+      display: none;
+    }
     .banner-title{
       margin-top: 142px;
       font-size: 32px;

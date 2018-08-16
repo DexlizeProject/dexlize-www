@@ -92,7 +92,7 @@ class IndexPage extends React.Component {
                     <div className="section section-ecosystem">
                         <SectionEcosystem/>
                     </div>
-                    <div className="section section-token">
+                    <div className="section section-token fp-noscroll">
                         <SectionToken/>
                     </div>
                     <div className="section section-development">
