@@ -5,7 +5,7 @@ import {withIntl, Link} from '../i18n'
 import Footer from '../components/Footer'
 
 import Navigation from '../components/IndexPage/Navigation'
-import SectionBanner from '../components/IndexPage/SectionBanner'
+import SectionHome from '../components/IndexPage/SectionHome'
 import SectionWhatIs from '../components/IndexPage/SectionWhatIs'
 import SectionFeatures from '../components/IndexPage/SectionFeatures'
 import SectionArchitecture from '../components/IndexPage/SectionArchitecture'
@@ -52,11 +52,11 @@ class IndexPage extends React.Component {
 
         new fullpage('#fullpage', {
             licenseKey: '887B9707-133D4802-8542264F-8795D5AA',
-            anchors: ['banner', 'whatis', 'features', 'architecture', 'ecosystem', 'token', 'development','roadmap', 'team', 'partners'],
+            anchors: ['home', 'whatis', 'features', 'architecture', 'ecosystem', 'token', 'development','roadmap', 'team', 'partners'],
             menu: '#navigation',
             scrollOverflow: true,
             onLeave: function (origin, destination, direction){
-                if(destination.anchor === 'banner'){
+                if(destination.anchor === 'home'){
                     document.getElementsByClassName('header')[0].style.display = 'block';
                     document.getElementsByClassName('navigation-list')[0].style.display = 'none';
                 }else{
@@ -77,8 +77,8 @@ class IndexPage extends React.Component {
             <Layout>
                <Navigation/>
                 <div id="fullpage">
-                    <div className="section section-banner">
-                        <SectionBanner/>
+                    <div className="section section-home">
+                        <SectionHome/>
                     </div>
                     <div className="section section-whatis">
                         <SectionWhatIs/>

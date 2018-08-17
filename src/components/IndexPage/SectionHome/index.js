@@ -3,7 +3,7 @@ import {FormattedMessage} from 'react-intl'
 import $ from 'jquery'
 import './style.less'
 
-export default class SectionBanner extends React.Component {
+export default class SectionHome extends React.Component {
     componentDidMount() {
         this.bannerBlockAnimation();
     }
