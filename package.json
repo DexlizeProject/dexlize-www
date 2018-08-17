@@ -10,6 +10,7 @@
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-less": "^1.1.8",
     "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-sitemap": "^1.2.25",
     "intl": "^1.2.5",
     "jquery": "^1.12.4",
     "less": "^3.8.1",
