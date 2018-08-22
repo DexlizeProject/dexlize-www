@@ -6,6 +6,7 @@ export default class SectionPartners extends React.Component {
     render() {
         return (
             <div className="container">
+                <a name="partners"/>
                 <div className="section-title">
                     <FormattedMessage id="partners.title"/>
                 </div>
