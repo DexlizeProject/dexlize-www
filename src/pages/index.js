@@ -57,12 +57,10 @@ class IndexPage extends React.Component {
             scrollOverflow: true,
             onLeave: function (origin, destination, direction){
                 if(destination.anchor === 'home'){
-                    // document.getElementsByClassName('header')[0].className = 'header'
-
+                    document.getElementsByClassName('header')[0].className = 'header'
                     // document.getElementsByClassName('navigation-list')[0].style.display = 'none';
                 }else{
-                    // document.getElementsByClassName('header')[0].className = 'header bg-white';
-
+                    document.getElementsByClassName('header')[0].className = 'header bg-white';
                     // document.getElementsByClassName('header')[0].style.display = 'none';
                     // document.getElementsByClassName('navigation-list')[0].style.display = 'block';
                 }
