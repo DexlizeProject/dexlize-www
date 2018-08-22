@@ -58,18 +58,9 @@ class IndexPage extends React.Component {
             onLeave: function (origin, destination, direction){
                 if(destination.anchor === 'home'){
                     document.getElementsByClassName('header')[0].className = 'header'
-                    // document.getElementsByClassName('navigation-list')[0].style.display = 'none';
                 }else{
                     document.getElementsByClassName('header')[0].className = 'header bg-white';
-                    // document.getElementsByClassName('header')[0].style.display = 'none';
-                    // document.getElementsByClassName('navigation-list')[0].style.display = 'block';
                 }
-                //以下代码在出设计稿后，与以上段落合并
-                // if(destination.anchor === 'team'){
-                //     document.getElementsByClassName('navigation-list')[0].style.display = 'none';
-                // }else{
-                //     document.getElementsByClassName('navigation-list')[0].style.display = 'block';
-                // }
             }
         })
     }
@@ -114,7 +105,6 @@ class IndexPage extends React.Component {
                         </div>
                         <Footer/>
                     </div>
-
                 </div>
             </Layout>
         )

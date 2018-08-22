@@ -26,7 +26,7 @@ export default class SectionHome extends React.Component {
                                         $('.block-2').animate({top: '+=24px'}, 400, function () {
                                             $(this).removeClass('icon-block-bitcoin');
                                             $('.block-1').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
-                                                $('.icon-banner-block-1').animate({top: '+=24px'}, 400, function(){
+                                                $('.block-1').animate({top: '+=24px'}, 400, function(){
                                                     $(this).removeClass('icon-block-bitcoin');
                                                     me.bannerBlockAnimation()
                                                 })

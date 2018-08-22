@@ -9,7 +9,9 @@ export default class Header extends React.Component {
         return (
             <header className="header">
                 <div className="container">
-                    <span className="icon icon-logo"/>
+                    <a href="#home">
+                        <span className="icon icon-logo"/>
+                    </a>
                     <div className="header-nav-wrap">
                         <ul className="header-nav" id="header-nav">
                             <li data-menuanchor="whatis"><a href="#whatis"><FormattedMessage id="nav.whatis"/>?</a></li>
