@@ -4,7 +4,7 @@ import {withIntl, Link} from '../i18n'
 
 import Footer from '../components/Footer'
 
-import Navigation from '../components/IndexPage/Navigation'
+// import Navigation from '../components/IndexPage/Navigation'
 import SectionHome from '../components/IndexPage/SectionHome'
 import SectionWhatIs from '../components/IndexPage/SectionWhatIs'
 import SectionFeatures from '../components/IndexPage/SectionFeatures'
@@ -53,29 +53,32 @@ class IndexPage extends React.Component {
         new fullpage('#fullpage', {
             licenseKey: '887B9707-133D4802-8542264F-8795D5AA',
             anchors: ['home', 'whatis', 'features', 'architecture', 'ecosystem', 'token', 'development','roadmap', 'team', 'partners'],
-            menu: '#navigation',
+            menu: '#header-nav',
             scrollOverflow: true,
             onLeave: function (origin, destination, direction){
                 if(destination.anchor === 'home'){
-                    document.getElementsByClassName('header')[0].style.display = 'block';
-                    document.getElementsByClassName('navigation-list')[0].style.display = 'none';
+                    // document.getElementsByClassName('header')[0].className = 'header'
+
+                    // document.getElementsByClassName('navigation-list')[0].style.display = 'none';
                 }else{
-                    document.getElementsByClassName('header')[0].style.display = 'none';
-                    document.getElementsByClassName('navigation-list')[0].style.display = 'block';
+                    // document.getElementsByClassName('header')[0].className = 'header bg-white';
+
+                    // document.getElementsByClassName('header')[0].style.display = 'none';
+                    // document.getElementsByClassName('navigation-list')[0].style.display = 'block';
                 }
                 //以下代码在出设计稿后，与以上段落合并
-                if(destination.anchor === 'team'){
-                    document.getElementsByClassName('navigation-list')[0].style.display = 'none';
-                }else{
-                    document.getElementsByClassName('navigation-list')[0].style.display = 'block';
-                }
+                // if(destination.anchor === 'team'){
+                //     document.getElementsByClassName('navigation-list')[0].style.display = 'none';
+                // }else{
+                //     document.getElementsByClassName('navigation-list')[0].style.display = 'block';
+                // }
             }
         })
     }
     render() {
         return (
             <Layout>
-               <Navigation/>
+               {/*<Navigation/>*/}
                 <div id="fullpage">
                     <div className="section section-home">
                         <SectionHome/>

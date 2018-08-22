@@ -1,12 +1,28 @@
 .header{
   color: #3a478f;
-  padding-top: 32px;
-  padding-bottom: 8px;
-  position: absolute;
+  background: #fff;
+  padding-top: 36px;
+  //padding-bottom: 36px;
+  position: fixed;
   left: 0;
   right: 0;
   margin: auto;
   z-index: 10;
+  #header-nav{
+    //margin-bottom: 36px;
+    li.active{
+      a{
+        padding-bottom: 36px;
+        text-decoration: none;
+        display: block;
+        color: #0f77ff;
+        border-bottom:4px solid #0f77ff;
+        &:hover, &:focus{
+          text-decoration: none;
+        }
+      }
+    }
+  }
   .icon-logo{
     vertical-align: middle;
   }

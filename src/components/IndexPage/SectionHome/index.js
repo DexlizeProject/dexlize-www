@@ -13,21 +13,19 @@ export default class SectionHome extends React.Component {
         //电脑端才展示动画
         if (typeof window !== 'undefined' && window.screen.width > 768) {
 
-            $('.icon-banner-block-5').addClass('icon-block-eos').animate({top: '-=24px'}, 400, function () {
-                $('.icon-banner-block-5').animate({top: '+=24px'}, 400, function () {
+            $('.block-5').addClass('icon-block-eos').animate({top: '-=24px'}, 400, function () {
+                $('.block-5').animate({top: '+=24px'}, 400, function () {
                     $(this).removeClass('icon-block-eos');
-                    $('.icon-banner-block-4').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
-                        $('.icon-banner-block-4').animate({top: '+=24px'}, 400, function () {
+                    $('.block-4').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
+                        $('.block-4').animate({top: '+=24px'}, 400, function () {
                             $(this).removeClass('icon-block-bitcoin');
-                            $('.icon-banner-block-3').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
-                                $('.icon-banner-block-3').animate({top: '+=24px'}, 400, function () {
+                            $('.block-3').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
+                                $('.block-3').animate({top: '+=24px'}, 400, function () {
                                     $(this).removeClass('icon-block-bitcoin');
-
-                                    $('.icon-banner-block-2').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
-                                        $('.icon-banner-block-2').animate({top: '+=24px'}, 400, function () {
+                                    $('.block-2').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
+                                        $('.block-2').animate({top: '+=24px'}, 400, function () {
                                             $(this).removeClass('icon-block-bitcoin');
-
-                                            $('.icon-banner-block-1').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
+                                            $('.block-1').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
                                                 $('.icon-banner-block-1').animate({top: '+=24px'}, 400, function(){
                                                     $(this).removeClass('icon-block-bitcoin');
                                                     me.bannerBlockAnimation()
@@ -41,26 +39,6 @@ export default class SectionHome extends React.Component {
                     })
                 })
             })
-
-            //
-            // $('.icon-banner-block-3').animate({top: '-=64px'},4000, function(){
-            //     $('.icon-banner-block-3').animate({top: '+=64px'}, 4000, function (){
-            //         //repeat animation
-            //         me.bannerBlockAnimation()
-            //     })
-            // })
-            // $('.icon-banner-block-2').animate({top: '-=48px'},4000, function(){
-            //     $('.icon-banner-block-2').animate({top: '+=48px'}, 4000)
-            // })
-            // $('.icon-banner-block-4').animate({top: '-=48px'},4000, function(){
-            //     $('.icon-banner-block-4').animate({top: '+=48px'}, 4000)
-            // })
-            // $('.icon-banner-block-1').animate({top: '-=24px'},4000, function(){
-            //     $('.icon-banner-block-1').animate({top: '+=24px'}, 4000)
-            // })
-            // $('.icon-banner-block-5').animate({top: '-=24px'},4000, function(){
-            //     $('.icon-banner-block-5').animate({top: '+=24px'}, 4000)
-            // })
         }
     }
 
@@ -82,11 +60,21 @@ export default class SectionHome extends React.Component {
                 </a>
                 <div className="banner-blocks">
                     <span className="icon icon-banner-block-group-1"/>
-                    <span className="icon icon-banner-block-1"/>
-                    <span className="icon icon-banner-block-2"/>
-                    <span className="icon icon-banner-block-3"/>
-                    <span className="icon icon-banner-block-4"/>
-                    <span className="icon icon-banner-block-5"/>
+                    <div className="block-1">
+                        <span className="icon icon-banner-block-1"/>
+                    </div>
+                    <div className="block-2">
+                        <span className="icon icon-banner-block-2"/>
+                    </div>
+                    <div className="block-3">
+                        <span className="icon icon-banner-block-3"/>
+                    </div>
+                    <div className="block-4">
+                        <span className="icon icon-banner-block-4"/>
+                    </div>
+                    <div className="block-5">
+                        <span className="icon icon-banner-block-5"/>
+                    </div>
                     <span className="icon icon-banner-block-group-2"/>
                 </div>
             </div>
