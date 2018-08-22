@@ -1,6 +1,5 @@
 .header{
   color: #3a478f;
-  //background: #fff;
   padding-top: 20px;
   position: fixed;
   left: 0;
@@ -54,12 +53,23 @@
       margin-left: 4px;
     }
   }
+  .glyphicon-menu-hamburger{
+    display: none;
+    float: right;
+    font-size: 24px;
+    margin-right: 8px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .header{
+    padding-top: 12px;
+    padding-bottom: 12px;
     .header-nav-wrap{
       display: none;
+    }
+    .glyphicon-menu-hamburger{
+      display: block;
     }
   }
 }

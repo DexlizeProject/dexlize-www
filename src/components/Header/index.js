@@ -35,6 +35,7 @@ export default class Header extends React.Component {
                     <div className="language-nav">
                         <Language/>
                     </div>
+                    <span className='glyphicon glyphicon-menu-hamburger'/>
                 </div>
             </header>
         )
