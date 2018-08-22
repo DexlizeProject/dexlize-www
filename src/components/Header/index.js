@@ -5,6 +5,12 @@ import Language from './components/language'
 import './style.less'
 
 export default class Header extends React.Component {
+    constructor(props){
+        super(props);
+    }
+    what(e){
+        console.log(e)
+    }
     render() {
         return (
             <header className="header">
@@ -13,7 +19,7 @@ export default class Header extends React.Component {
                         <span className="icon icon-logo"/>
                     </a>
                     <div className="header-nav-wrap">
-                        <ul className="header-nav" id="header-nav">
+                        <ul className="header-nav" id="header-nav" onClick={this.what.bind(this,event)}>
                             <li data-menuanchor="whatis"><a href="#whatis"><FormattedMessage id="nav.whatis"/>?</a></li>
                             <li data-menuanchor="features"><a href="#features"><FormattedMessage id="nav.features"/></a></li>
                             <li data-menuanchor="architecture"><a href="#architecture"><FormattedMessage id="nav.architecture"/></a></li>

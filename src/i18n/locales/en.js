@@ -11,6 +11,7 @@ module.exports = {
     'nav.team': 'Team',
     'nav.partners': 'Partners',
     'nav.subscribe': 'Subscribe',
+    'nav.switchLang': 'Switch',
     'banner.text1': 'DEX-lize Your Exchange',
     'banner.text2': 'Dexlize',
     'banner.viewWhitepaper': 'View Whitepaper',

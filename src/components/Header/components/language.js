@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
+import {FormattedMessage} from 'react-intl'
 import './language.less'
 
 class Language extends Component {
@@ -8,9 +9,6 @@ class Language extends Component {
     }
     constructor(props) {
         super(props)
-        this.toggleLanguageList = this.toggleLanguageList.bind(this)
-        this.setLanguage = this.setLanguage.bind(this)
-
         let initLanguage = ''
         if (typeof localStorage !== 'undefined' && localStorage.getItem('language') !== ''){
             initLanguage = localStorage.getItem('language')
@@ -20,15 +18,9 @@ class Language extends Component {
             initLanguage = 'en'
         }
         this.state = {
-            showLanguageList: false,
             currentLanguage: initLanguage
         }
-    }
-
-    toggleLanguageList() {
-        this.setState({
-            showLanguageList: !this.state.showLanguageList
-        })
+        this.setLanguage = this.setLanguage.bind(this)
     }
 
     setLanguage (target) {
@@ -40,20 +32,13 @@ class Language extends Component {
     }
 
     render() {
-        const CurrentLangEn = <span><span className="icon icon-lang-en"/> English</span>
-        const CurrentLangZh = <span><span className="icon icon-lang-zh"/> 简体中文</span>
-        const AvailableLangEn =  <span onClick={this.setLanguage.bind(this, 'en')}>English</span>
-        const AvailableLangZh =  <span onClick={this.setLanguage.bind(this, 'zh')}>简体中文</span>
-
+        const CurrentLangEn = <span onClick={this.setLanguage.bind(this, 'en')}><span className="icon icon-lang-en"/> <FormattedMessage id="nav.switchLang"/></span>
+        const CurrentLangZh = <span onClick={this.setLanguage.bind(this, 'zh')}><span className="icon icon-lang-zh"/> <FormattedMessage id="nav.switchLang"/></span>
         return (
             <div className="language-switch">
                 <div className="current-lang" onClick={this.toggleLanguageList}>
-                    {this.state.currentLanguage == 'en' ? CurrentLangEn : CurrentLangZh}
-                    <span className="glyphicon glyphicon-chevron-down"/>
+                    {this.state.currentLanguage == 'en' ? CurrentLangZh : CurrentLangEn}
                 </div>
-                {this.state.showLanguageList && <div className='language-list'>
-                    {this.state.currentLanguage == 'en' ? AvailableLangZh : AvailableLangEn}
-                </div>}
             </div>
         )
     }
