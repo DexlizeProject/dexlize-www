@@ -7,6 +7,7 @@ const Layout = ({children, data, intl}) => (
     <div>
         <Helmet>
             <link rel="shortcut icon" href="/static/favicon.ico"/>
+            <link rel="apple-touch-icon" href="/static/apple-touch-icon.png"/>
             <title>{intl.formatMessage({id: 'title'})}</title>
             <meta name="description" content={intl.formatMessage({id: 'welcome'})}/>
             <meta name="keywords" content="dexlize, bitcoin"/>
