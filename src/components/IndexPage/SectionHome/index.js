@@ -55,19 +55,19 @@ export default class SectionHome extends React.Component {
                 <div className="banner-blocks">
                     <span className="icon icon-banner-block-group-1"/>
                     <div className="block-1">
-                        <span className="icon icon-top icon-block-eos"/>
+                        <span className="icon icon-top icon-block-question"/>
                         <span className="icon icon-banner-block"/>
                     </div>
                     <div className="block-2">
-                        <span className="icon icon-top icon-block-eos"/>
+                        <span className="icon icon-top icon-block-question"/>
                         <span className="icon icon-banner-block"/>
                     </div>
                     <div className="block-3">
-                        <span className="icon icon-top icon-block-eos"/>
+                        <span className="icon icon-top icon-block-add"/>
                         <span className="icon icon-banner-block"/>
                     </div>
                     <div className="block-4">
-                        <span className="icon icon-top icon-block-eos"/>
+                        <span className="icon icon-top icon-block-dexlize"/>
                         <span className="icon icon-banner-block"/>
                     </div>
                     <div className="block-5">
