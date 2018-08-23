@@ -4,18 +4,59 @@ import $ from 'jquery'
 import './style.less'
 
 export default class SectionTeam extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props)
-        this.slideToggle = this.slideToggle.bind(this)
+        this.state = {
+            isAnimating: false
+        }
+    }
 
-    }
-    slideToggle () {
+    slideLeft() {
+        let me = this;
+        if(this.state.isAnimating === true){
+            return false;
+        }
+        const groupWidth = $('.groups').width();
         const currentGroup = $('.group-1').css('display') === 'block' ? '1' : '2'
-        const nextGroup = currentGroup === '1' ? '2' : '1'
-        $('.group-' + currentGroup).fadeOut(function(){
-            $('.group-' + nextGroup).fadeIn();
-        });
+        this.setState({
+            isAnimating: true
+        })
+        $('.group-' + currentGroup).animate({
+            left: -groupWidth
+        }, 800, function () {
+            $(this).hide();
+        }).siblings().show().css({left: groupWidth}).animate({
+            left: 0
+        }, 800, function(){
+            me.setState({
+                isAnimating: false
+            })
+        })
     }
+
+    slideRight() {
+        let me = this;
+        if(this.state.isAnimating === true){
+            return false;
+        }
+        const groupWidth = $('.groups').width();
+        const currentGroup = $('.group-1').css('display') === 'block' ? '1' : '2'
+        this.setState({
+            isAnimating: true
+        })
+        $('.group-' + currentGroup).animate({
+            left: groupWidth
+        }, 800, function () {
+            $(this).hide();
+        }).siblings().show().css({left: -groupWidth}).animate({
+            left: 0
+        }, 800, function(){
+            me.setState({
+                isAnimating: false
+            })
+        })
+    }
+
     render() {
         return (
             <div className="container">
@@ -23,11 +64,11 @@ export default class SectionTeam extends React.Component {
                     <FormattedMessage id="team.title"/>
                 </div>
                 <div className="row">
-                    <div className="icon-left-wrap" onClick={this.slideToggle}>
+                    <div className="icon-left-wrap" onClick={this.slideLeft.bind(this)}>
                         <span className="icon icon-left"/>
                     </div>
                     <div className="groups">
-                        <div className="group-1">
+                        <div className="group-1 row">
                             <div className="col-md-2 col-xs-4">
                                 <div className="team-item">
                                     <div className="team-item-img">
@@ -116,7 +157,7 @@ export default class SectionTeam extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="group-2">
+                        <div className="group-2 row">
                             <div className="col-md-2 col-sm-3 col-xs-4">
                                 <div className="team-item">
                                     <div className="team-item-img">
@@ -195,7 +236,7 @@ export default class SectionTeam extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="icon-right-wrap" onClick={this.slideToggle}>
+                    <div className="icon-right-wrap" onClick={this.slideRight.bind(this)}>
                         <span className="icon icon-right"/>
                     </div>
                 </div>
