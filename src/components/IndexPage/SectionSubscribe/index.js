@@ -7,7 +7,6 @@ export default class SectionSubscribe extends React.Component{
     render () {
         return (
             <div className="container">
-                <a name="subscribe"/>
                 <span className="icon icon-square-5"/>
                 <div className="section-title">
                     <FormattedMessage id="subscribe.title"/>

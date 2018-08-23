@@ -42,16 +42,14 @@
         margin-right: 0;
       }
     }
+    .language-nav-mobile{
+      display: none;
+    }
   }
+
   .language-nav{
     float: right;
     margin-top: 6px;
-    .icon-lang-en, .icon-lang-zh{
-      margin-right: 8px;
-    }
-    .glyphicon{
-      margin-left: 4px;
-    }
   }
   .glyphicon-menu-hamburger{
     display: none;
@@ -66,7 +64,37 @@
     padding-top: 12px;
     padding-bottom: 12px;
     .header-nav-wrap{
+      background: #fff;
+      position: fixed;
+      top:58px;
+      bottom:0;
+      left:0;
+      right: 0;
+    }
+    .language-nav{
       display: none;
+    }
+    .language-nav-mobile{
+      display: block;
+      padding: 12px 0;
+    }
+    #header-nav{
+      margin-left: 0;
+      width: 100%;
+      li{
+        text-align: center;
+        margin-right: 0;
+        display: block;
+        a{
+          padding: 16px 0;
+          border-bottom: 1px solid #eee;
+        }
+        &.active{
+          a{
+            border-bottom: 1px solid #eee;
+          }
+        }
+      }
     }
     .glyphicon-menu-hamburger{
       display: block;

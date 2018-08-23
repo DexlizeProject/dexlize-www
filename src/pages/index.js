@@ -67,7 +67,6 @@ class IndexPage extends React.Component {
     render() {
         return (
             <Layout>
-               {/*<Navigation/>*/}
                 <div id="fullpage">
                     <div className="section section-home">
                         <SectionHome/>
@@ -93,18 +92,33 @@ class IndexPage extends React.Component {
                     <div className="section section-roadmap">
                         <SectionRoadmap/>
                     </div>
-                    <div className="section fp-auto-height">
-                        <div className="section-team">
+                    {/*<div className="section fp-auto-height section-no-scroll">*/}
+                        <div className="section fp-auto-height section-team">
                             <SectionTeam/>
                         </div>
-                        <div className="section-partners">
+                        <div className="section fp-auto-height section-partners">
                             <SectionPartners/>
                         </div>
-                        <div className="section-subscribe">
+                        <div className="section fp-auto-height section-subscribe">
                             <SectionSubscribe/>
                         </div>
-                        <Footer/>
-                    </div>
+                        <div className="section fp-auto-height section-footer">
+                            <Footer/>
+
+                        </div>
+                    {/*</div>*/}
+                    {/*<div className="section fp-auto-height section-no-scroll">*/}
+                        {/*<div className="section-team">*/}
+                            {/*<SectionTeam/>*/}
+                        {/*</div>*/}
+                        {/*<div className="section-partners">*/}
+                            {/*<SectionPartners/>*/}
+                        {/*</div>*/}
+                        {/*<div className="section-subscribe">*/}
+                            {/*<SectionSubscribe/>*/}
+                        {/*</div>*/}
+                        {/*<Footer/>*/}
+                    {/*</div>*/}
                 </div>
             </Layout>
         )
