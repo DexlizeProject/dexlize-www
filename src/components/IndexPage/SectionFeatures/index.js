@@ -11,7 +11,6 @@ export default class SectionFeatures extends React.Component{
             <div className="container">
                 <div className="section-title">
                     <FormattedMessage id="features.title"/>
-                    {/*FE<span className="section-title-bright">A</span>TURES*/}
                 </div>
                 <div className="row">
                     <div className="col-sm-4">

@@ -37,7 +37,7 @@ class Language extends Component {
         return (
             <div className="language-switch">
                 <div className="current-lang" onClick={this.toggleLanguageList}>
-                    {this.state.currentLanguage == 'en' ? CurrentLangZh : CurrentLangEn}
+                    {this.state.currentLanguage === 'en' ? CurrentLangZh : CurrentLangEn}
                 </div>
             </div>
         )

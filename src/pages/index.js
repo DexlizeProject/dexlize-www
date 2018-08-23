@@ -4,7 +4,6 @@ import {withIntl, Link} from '../i18n'
 
 import Footer from '../components/Footer'
 
-// import Navigation from '../components/IndexPage/Navigation'
 import SectionHome from '../components/IndexPage/SectionHome'
 import SectionWhatIs from '../components/IndexPage/SectionWhatIs'
 import SectionFeatures from '../components/IndexPage/SectionFeatures'
@@ -19,15 +18,16 @@ import SectionSubscribe from '../components/IndexPage/SectionSubscribe'
 import helper from "../helpers";
 
 class IndexPage extends React.Component {
-    constructor (props){
+    constructor(props) {
         super(props)
         this.state = {
             language: (typeof localStorage !== 'undefined' && localStorage.getItem('language')) || 'en'
         }
     }
+
     componentDidMount() {
         //Change character color in section title
-        if(this.state.language === 'en'){
+        if (this.state.language === 'en') {
             document.getElementsByClassName('section-features')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-features')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2])
             document.getElementsByClassName('section-architecture')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-architecture')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 11])
             document.getElementsByClassName('section-ecosystem')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-ecosystem')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 11])
@@ -38,7 +38,7 @@ class IndexPage extends React.Component {
             document.getElementsByClassName('section-partners')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-partners')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 13])
             document.getElementsByClassName('section-subscribe')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-subscribe')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 5])
 
-        }else{
+        } else {
             document.getElementsByClassName('section-features')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-features')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 10])
             document.getElementsByClassName('section-architecture')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-architecture')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 10])
             document.getElementsByClassName('section-ecosystem')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-ecosystem')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 10])
@@ -52,18 +52,19 @@ class IndexPage extends React.Component {
 
         new fullpage('#fullpage', {
             licenseKey: '887B9707-133D4802-8542264F-8795D5AA',
-            anchors: ['home', 'whatis', 'features', 'architecture', 'ecosystem', 'token', 'development','roadmap', 'team', 'partners', 'subscribe'],
+            anchors: ['home', 'whatis', 'features', 'architecture', 'ecosystem', 'token', 'development', 'roadmap', 'team', 'partners', 'subscribe'],
             menu: '#header-nav',
             scrollOverflow: true,
-            onLeave: function (origin, destination, direction){
-                if(destination.anchor === 'home'){
+            onLeave: function (origin, destination, direction) {
+                if (destination.anchor === 'home') {
                     document.getElementsByClassName('header')[0].className = 'header'
-                }else{
+                } else {
                     document.getElementsByClassName('header')[0].className = 'header bg-white';
                 }
             }
         })
     }
+
     render() {
         return (
             <Layout>
@@ -92,33 +93,19 @@ class IndexPage extends React.Component {
                     <div className="section section-roadmap">
                         <SectionRoadmap/>
                     </div>
-                    {/*<div className="section fp-auto-height section-no-scroll">*/}
-                        <div className="section fp-auto-height section-team">
-                            <SectionTeam/>
-                        </div>
-                        <div className="section fp-auto-height section-partners">
-                            <SectionPartners/>
-                        </div>
-                        <div className="section fp-auto-height section-subscribe">
-                            <SectionSubscribe/>
-                        </div>
-                        <div className="section fp-auto-height section-footer">
-                            <Footer/>
+                    <div className="section fp-auto-heght section-team">
+                        <SectionTeam/>
+                    </div>
+                    <div className="section fp-auto-heght section-partners">
+                        <SectionPartners/>
+                    </div>
+                    <div className="section fp-auto-heght section-subscribe">
+                        <SectionSubscribe/>
+                    </div>
+                    <div className="section fp-auto-heght section-footer">
+                        <Footer/>
 
-                        </div>
-                    {/*</div>*/}
-                    {/*<div className="section fp-auto-height section-no-scroll">*/}
-                        {/*<div className="section-team">*/}
-                            {/*<SectionTeam/>*/}
-                        {/*</div>*/}
-                        {/*<div className="section-partners">*/}
-                            {/*<SectionPartners/>*/}
-                        {/*</div>*/}
-                        {/*<div className="section-subscribe">*/}
-                            {/*<SectionSubscribe/>*/}
-                        {/*</div>*/}
-                        {/*<Footer/>*/}
-                    {/*</div>*/}
+                    </div>
                 </div>
             </Layout>
         )

@@ -11,8 +11,6 @@ export default class SectionDevelopment extends React.Component{
                 </div>
                 <div className="section-title">
                     <FormattedMessage id="development.title"/>
-
-                    {/*DE<span className="section-title-bright">V</span>ELOPMENT*/}
                 </div>
                 <div className="development-text">
                     <FormattedMessage id="development.text.1"/><br/> <FormattedMessage id="development.text.2"/>
