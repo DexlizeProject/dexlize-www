@@ -101,11 +101,12 @@ class IndexPage extends React.Component {
                     </div>
                     <div className="section fp-auto-heght section-subscribe">
                         <SectionSubscribe/>
-                    </div>
-                    <div className="section fp-auto-heght section-footer">
-                        <Footer/>
 
                     </div>
+                    <Footer/>
+
+                    {/*<div className="section fp-auto-heght section-footer">*/}
+                    {/*</div>*/}
                 </div>
             </Layout>
         )
