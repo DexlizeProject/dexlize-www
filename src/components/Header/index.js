@@ -10,6 +10,10 @@ export default class Header extends React.Component {
         super(props);
     }
 
+    toggleHeaderNav() {
+        $('.header-nav-wrap').slideToggle()
+    }
+
     render() {
         return (
             <header className="header">
@@ -37,7 +41,7 @@ export default class Header extends React.Component {
                     <div className="language-nav">
                         <Language/>
                     </div>
-                    <span className='glyphicon glyphicon-menu-hamburger'/>
+                    <span onClick={this.toggleHeaderNav.bind(this)} className='glyphicon glyphicon-menu-hamburger'/>
                 </div>
             </header>
         )
