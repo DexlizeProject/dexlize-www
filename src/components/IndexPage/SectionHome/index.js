@@ -12,22 +12,16 @@ export default class SectionHome extends React.Component {
         var me = this;
         //电脑端才展示动画
         if (typeof window !== 'undefined' && window.screen.width > 768) {
-
-            $('.block-5').addClass('icon-block-eos').animate({top: '-=24px'}, 400, function () {
-                $('.block-5').animate({top: '+=24px'}, 400, function () {
-                    $(this).removeClass('icon-block-eos');
-                    $('.block-4').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
-                        $('.block-4').animate({top: '+=24px'}, 400, function () {
-                            $(this).removeClass('icon-block-bitcoin');
-                            $('.block-3').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
-                                $('.block-3').animate({top: '+=24px'}, 400, function () {
-                                    $(this).removeClass('icon-block-bitcoin');
-                                    $('.block-2').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
-                                        $('.block-2').animate({top: '+=24px'}, 400, function () {
-                                            $(this).removeClass('icon-block-bitcoin');
-                                            $('.block-1').addClass('icon-block-bitcoin').animate({top: '-=24px'}, 400, function () {
-                                                $('.block-1').animate({top: '+=24px'}, 400, function(){
-                                                    $(this).removeClass('icon-block-bitcoin');
+            $('.block-5').animate({top: '-=24px'}).find('.icon-top').animate({'opacity': 1}, function(){
+                $('.block-5').animate({top: '+=24px'}).find('.icon-top').animate({'opacity': 0}, function(){
+                    $('.block-4').animate({top: '-=24px'}).find('.icon-top').animate({'opacity': 1}, function(){
+                        $('.block-4').animate({top: '+=24px'}).find('.icon-top').animate({'opacity': 0}, function(){
+                            $('.block-3').animate({top: '-=24px'}).find('.icon-top').animate({'opacity': 1}, function(){
+                                $('.block-3').animate({top: '+=24px'}).find('.icon-top').animate({'opacity': 0}, function(){
+                                    $('.block-2').animate({top: '-=24px'}).find('.icon-top').animate({'opacity': 1}, function(){
+                                        $('.block-2').animate({top: '+=24px'}).find('.icon-top').animate({'opacity': 0}, function(){
+                                            $('.block-1').animate({top: '-=24px'}).find('.icon-top').animate({'opacity': 1}, function(){
+                                                $('.block-1').animate({top: '+=24px'}).find('.icon-top').animate({'opacity': 0}, function(){
                                                     me.bannerBlockAnimation()
                                                 })
                                             })
@@ -61,19 +55,24 @@ export default class SectionHome extends React.Component {
                 <div className="banner-blocks">
                     <span className="icon icon-banner-block-group-1"/>
                     <div className="block-1">
-                        <span className="icon icon-banner-block-1"/>
+                        <span className="icon icon-top icon-block-eos"/>
+                        <span className="icon icon-banner-block"/>
                     </div>
                     <div className="block-2">
-                        <span className="icon icon-banner-block-2"/>
+                        <span className="icon icon-top icon-block-eos"/>
+                        <span className="icon icon-banner-block"/>
                     </div>
                     <div className="block-3">
-                        <span className="icon icon-banner-block-3"/>
+                        <span className="icon icon-top icon-block-eos"/>
+                        <span className="icon icon-banner-block"/>
                     </div>
                     <div className="block-4">
-                        <span className="icon icon-banner-block-4"/>
+                        <span className="icon icon-top icon-block-eos"/>
+                        <span className="icon icon-banner-block"/>
                     </div>
                     <div className="block-5">
-                        <span className="icon icon-banner-block-5"/>
+                        <span className="icon icon-top icon-block-eos"/>
+                        <span className="icon icon-banner-block"/>
                     </div>
                     <span className="icon icon-banner-block-group-2"/>
                 </div>
