@@ -29,18 +29,18 @@ export default class SectionRoadmap extends React.Component{
                             <div className="timeline-upcoming-event">去中心化交易解决方案研究</div>
                         </div>
                     </div>
-                    <div className="timeline-item">
-                        <div className="timeline-item-normal">
-                            <div className="time-dot mr10"/>
-                            <div className="time-bar mr10"/>
-                            <div className="time-date">2018 July</div>
-                        </div>
-                        <div className="timeline-item-active">
-                            <span className="icon icon-triangle"/>
-                            <div className="timeline-upcoming-date">2018 July</div>
-                            <div className="timeline-upcoming-event">EOS钱包版本1.0发布，支持 EOS 资产转移</div>
-                        </div>
-                    </div>
+                    {/*<div className="timeline-item">*/}
+                        {/*<div className="timeline-item-normal">*/}
+                            {/*<div className="time-dot mr10"/>*/}
+                            {/*<div className="time-bar mr10"/>*/}
+                            {/*<div className="time-date">2018 July</div>*/}
+                        {/*</div>*/}
+                        {/*<div className="timeline-item-active">*/}
+                            {/*<span className="icon icon-triangle"/>*/}
+                            {/*<div className="timeline-upcoming-date">2018 July</div>*/}
+                            {/*<div className="timeline-upcoming-event">EOS钱包版本1.0发布，支持 EOS 资产转移</div>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
                     <div className="timeline-item">
                         <div className="timeline-item-normal">
                             <div className="time-dot mr10"/>
