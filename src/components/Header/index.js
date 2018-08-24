@@ -11,13 +11,13 @@ export default class Header extends React.Component {
     }
 
     toggleHeaderNav() {
-        if(typeof window !== 'undefined' && window.screen.width <=768){
+        if(typeof window !== 'undefined' && window.screen.width <=1200){
             $('.header-nav-wrap').slideToggle()
         }
     }
 
     hideHeaderNav() {
-        if(typeof window !== 'undefined' && window.screen.width <=768){
+        if(typeof window !== 'undefined' && window.screen.width <=1200){
             $('.header-nav-wrap').hide();
         }
     }
