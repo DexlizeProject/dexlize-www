@@ -10,28 +10,28 @@ export default class SectionHome extends React.Component {
 
     bannerBlockAnimation() {
         var me = this;
-        //电脑端才展示动画
-        // $('.block-5').animate({top: '-=24px'}).find('.icon-top').animate({'opacity': 1}, function () {
-        //     $('.block-5').animate({top: '+=24px'}).find('.icon-top').animate({'opacity': 0}, function () {
-        //         $('.block-4').animate({top: '-=24px'}).find('.icon-top').animate({'opacity': 1}, function () {
-        //             $('.block-4').animate({top: '+=24px'}).find('.icon-top').animate({'opacity': 0}, function () {
-        //                 $('.block-3').animate({top: '-=24px'}).find('.icon-top').animate({'opacity': 1}, function () {
-        //                     $('.block-3').animate({top: '+=24px'}).find('.icon-top').animate({'opacity': 0}, function () {
-        //                         $('.block-2').animate({top: '-=24px'}).find('.icon-top').animate({'opacity': 1}, function () {
-        //                             $('.block-2').animate({top: '+=24px'}).find('.icon-top').animate({'opacity': 0}, function () {
-        //                                 $('.block-1').animate({top: '-=24px'}).find('.icon-top').animate({'opacity': 1}, function () {
-        //                                     $('.block-1').animate({top: '+=24px'}).find('.icon-top').animate({'opacity': 0}, function () {
-        //                                         me.bannerBlockAnimation()
-        //                                     })
-        //                                 })
-        //                             })
-        //                         })
-        //                     })
-        //                 })
-        //             })
-        //         })
-        //     })
-        // })
+        //首屏block动画
+        $('.block-5').animate({top: '-=24px'}).find('.icon-top').animate({'opacity': 1}, function () {
+            $('.block-5').animate({top: '+=24px'}).find('.icon-top').animate({'opacity': 0}, function () {
+                $('.block-4').animate({top: '-=24px'}).find('.icon-top').animate({'opacity': 1}, function () {
+                    $('.block-4').animate({top: '+=24px'}).find('.icon-top').animate({'opacity': 0}, function () {
+                        $('.block-3').animate({top: '-=24px'}).find('.icon-top').animate({'opacity': 1}, function () {
+                            $('.block-3').animate({top: '+=24px'}).find('.icon-top').animate({'opacity': 0}, function () {
+                                $('.block-2').animate({top: '-=24px'}).find('.icon-top').animate({'opacity': 1}, function () {
+                                    $('.block-2').animate({top: '+=24px'}).find('.icon-top').animate({'opacity': 0}, function () {
+                                        $('.block-1').animate({top: '-=24px'}).find('.icon-top').animate({'opacity': 1}, function () {
+                                            $('.block-1').animate({top: '+=24px'}).find('.icon-top').animate({'opacity': 0}, function () {
+                                                me.bannerBlockAnimation()
+                                            })
+                                        })
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
+            })
+        })
     }
 
     render() {
