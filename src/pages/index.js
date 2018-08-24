@@ -69,39 +69,38 @@ class IndexPage extends React.Component {
         return (
             <Layout>
                 <div id="fullpage">
-                    <div className="section section-home">
+                    <div className="section section-home fp-no-scroll">
                         <SectionHome/>
                     </div>
-                    <div className="section section-whatis">
+                    <div className="section section-whatis fp-no-scroll">
                         <SectionWhatIs/>
                     </div>
-                    <div className="section section-features">
+                    <div className="section section-features fp-no-scroll">
                         <SectionFeatures/>
                     </div>
-                    <div className="section section-architecture">
+                    <div className="section section-architecture fp-no-scroll">
                         <SectionArchitecture/>
                     </div>
-                    <div className="section section-ecosystem">
+                    <div className="section section-ecosystem fp-no-scroll">
                         <SectionEcosystem/>
                     </div>
                     <div className="section section-token fp-noscroll">
                         <SectionToken/>
                     </div>
-                    <div className="section section-development">
+                    <div className="section section-development fp-no-scroll">
                         <SectionDevelopment/>
                     </div>
-                    <div className="section section-roadmap">
+                    <div className="section section-roadmap fp-no-scroll">
                         <SectionRoadmap/>
                     </div>
-                    <div className="section fp-auto-heght section-team">
+                    <div className="section section-team fp-no-scroll">
                         <SectionTeam/>
                     </div>
-                    <div className="section fp-auto-heght section-partners">
+                    <div className="section section-partners fp-no-scroll">
                         <SectionPartners/>
                     </div>
-                    <div className="section fp-auto-heght section-subscribe">
+                    <div className="section section-subscribe fp-no-scroll">
                         <SectionSubscribe/>
-
                     </div>
                     <Footer/>
                 </div>

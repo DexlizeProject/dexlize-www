@@ -12,26 +12,7 @@ export default class SectionTeam extends React.Component {
     }
 
     slideLeft() {
-        let me = this;
-        if(this.state.isAnimating === true){
-            return false;
-        }
-        const groupWidth = $('.groups').width();
-        const currentGroup = $('.group-1').css('display') === 'block' ? '1' : '2'
-        this.setState({
-            isAnimating: true
-        })
-        $('.group-' + currentGroup).animate({
-            left: -groupWidth
-        }, 800, function () {
-            $(this).hide();
-        }).siblings().show().css({left: groupWidth}).animate({
-            left: 0
-        }, 800, function(){
-            me.setState({
-                isAnimating: false
-            })
-        })
+
     }
 
     slideRight() {
@@ -56,6 +37,55 @@ export default class SectionTeam extends React.Component {
             })
         })
     }
+    componentDidMount() {
+        let me = this;
+        $('.icon-left-wrap').click(function(){
+            if(me.state.isAnimating === true){
+                return false;
+            }
+            const groupWidth = $('.groups').width();
+            const currentGroup = $('.group-1').css('display') === 'block' ? '1' : '2'
+            me.setState({
+                isAnimating: true
+            })
+            $('.group-' + currentGroup).animate({
+                left: -groupWidth
+            }, 800, function () {
+                $(this).hide();
+            }).siblings().show().css({left: groupWidth}).animate({
+                left: 0
+            }, 800, function(){
+                me.setState({
+                    isAnimating: false
+                })
+            })
+        })
+
+        $('.icon-right-wrap').click(function(){
+            if(me.state.isAnimating === true){
+                return false;
+            }
+            const groupWidth = $('.groups').width();
+            const currentGroup = $('.group-1').css('display') === 'block' ? '1' : '2'
+            me.setState({
+                isAnimating: true
+            })
+            $('.group-' + currentGroup).animate({
+                left: groupWidth
+            }, 800, function () {
+                $(this).hide();
+            }).siblings().show().css({left: -groupWidth}).animate({
+                left: 0
+            }, 800, function(){
+                me.setState({
+                    isAnimating: false
+                })
+            })
+        })
+
+
+
+    }
 
     render() {
         return (
@@ -64,7 +94,7 @@ export default class SectionTeam extends React.Component {
                     <FormattedMessage id="team.title"/>
                 </div>
                 <div className="row">
-                    <div className="icon-left-wrap" onClick={this.slideLeft.bind(this)}>
+                    <div className="icon-left-wrap">
                         <span className="icon icon-left"/>
                     </div>
                     <div className="groups">
@@ -236,7 +266,7 @@ export default class SectionTeam extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="icon-right-wrap" onClick={this.slideRight.bind(this)}>
+                    <div className="icon-right-wrap">
                         <span className="icon icon-right"/>
                     </div>
                 </div>

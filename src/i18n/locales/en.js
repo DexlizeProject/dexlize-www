@@ -74,7 +74,7 @@ module.exports = {
     'team.5.title': 'COO & Co-Founder',
     'team.5.title2': 'Growth Strategy & Operation',
     'team.6.name': 'Meon Wu',
-    'team.6.title': 'Branding Magt.',
+    'team.6.title': 'Branding Mgmt.',
     'team.6.title2': 'Designer',
     'team.7.name': 'Leo Liu',
     'team.7.title': 'Full-stack Developer',
