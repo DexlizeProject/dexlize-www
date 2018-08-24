@@ -59,7 +59,7 @@ class IndexPage extends React.Component {
                 if (destination.anchor === 'home') {
                     document.getElementsByClassName('header')[0].className = 'header'
                 } else {
-                    document.getElementsByClassName('header')[0].className = 'header bg-white';
+                    document.getElementsByClassName('header')[0].className = 'header header-bg-white';
                 }
             }
         })
@@ -104,9 +104,6 @@ class IndexPage extends React.Component {
 
                     </div>
                     <Footer/>
-
-                    {/*<div className="section fp-auto-heght section-footer">*/}
-                    {/*</div>*/}
                 </div>
             </Layout>
         )
