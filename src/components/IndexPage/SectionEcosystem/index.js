@@ -7,7 +7,7 @@ export default class SectionEcosystem extends React.Component{
         return (
             <div className="container">
                 <div className="section-title">
-                    <FormattedMessage id="ecosystem.title"/>
+                    <FormattedMessage id="ecosystem.title" values={{o:(<span className="section-title-bright">O</span>), t:(<span className="section-title-bright">态</span>)}}/>
                 </div>
                 <div className="row">
                     <div className="col-sm-6">

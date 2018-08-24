@@ -7,7 +7,7 @@ export default class SectionPartners extends React.Component {
         return (
             <div className="container">
                 <div className="section-title">
-                    <FormattedMessage id="partners.title"/>
+                    <FormattedMessage id="partners.title" values={{r:(<span className="section-title-bright">R</span>), v:(<span className="section-title-bright">V</span>), z:(<span className="section-title-bright">作</span>), w:(<span className="section-title-bright">问</span>)}}/>
                 </div>
                 <div className="partners-wrap">
                     <div className="col-xs-4 col-md-2">

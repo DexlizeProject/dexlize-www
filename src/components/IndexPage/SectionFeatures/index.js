@@ -4,13 +4,11 @@ import helper from '../../../helpers'
 import './style.less'
 
 export default class SectionFeatures extends React.Component{
-    componentDidMount () {
-    }
     render () {
         return (
             <div className="container">
                 <div className="section-title">
-                    <FormattedMessage id="features.title"/>
+                    <FormattedMessage id="features.title" values={{a: (<span className="section-title-bright">A</span>), d: (<span className="section-title-bright">点</span>)}}/>
                 </div>
                 <div className="row">
                     <div className="col-sm-4">

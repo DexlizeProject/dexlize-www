@@ -9,7 +9,7 @@ export default class SectionSubscribe extends React.Component{
             <div className="container">
                 <span className="icon icon-square-5"/>
                 <div className="section-title">
-                    <FormattedMessage id="subscribe.title"/>
+                    <FormattedMessage id="subscribe.title" values={{b:(<span className="section-title-bright">b</span>), y:(<span className="section-title-bright">阅</span>)}}/>
                 </div>
                 <div className="section-subscribe-email">
                     <Email/>

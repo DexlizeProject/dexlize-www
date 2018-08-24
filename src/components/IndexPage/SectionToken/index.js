@@ -15,7 +15,7 @@ export default class SectionToken extends React.Component{
             <div className="container">
                 <span className="icon icon-square-3"/>
                 <div className="section-title">
-                    <FormattedMessage id="token.title"/>
+                    <FormattedMessage id="token.title" values={{k:(<span className="section-title-bright">K</span>), z: (<span className="section-title-bright">证</span>)}}/>
                 </div>
                 <div className="row">
                     <div className="col-sm-6">

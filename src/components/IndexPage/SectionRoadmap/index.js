@@ -3,18 +3,12 @@ import {FormattedMessage} from 'react-intl'
 import './style.less'
 
 export default class SectionRoadmap extends React.Component{
-    constructor(props){
-        super(props)
-        this.state = {
-
-        }
-    }
     render () {
         return (
             <div className="container">
                 <span className="icon icon-square-4"/>
                 <div className="section-title">
-                    <FormattedMessage id="roadmap.title"/>
+                    <FormattedMessage id="roadmap.title" values={{a:(<span className="roadmap-title-active">a</span>), x:(<span className="roadmap-title-active">线</span>)}}/>
                 </div>
                 <div className="timeline">
                     <div className="timeline-item">

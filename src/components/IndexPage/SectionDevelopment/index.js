@@ -10,7 +10,7 @@ export default class SectionDevelopment extends React.Component{
                     <FormattedMessage id="development.subtitle"/>
                 </div>
                 <div className="section-title">
-                    <FormattedMessage id="development.title"/>
+                    <FormattedMessage id="development.title" values={{v:(<span className="section-title-bright">V</span>), l: (<span className="section-title-bright">来</span>)}}/>
                 </div>
                 <div className="development-text">
                     <FormattedMessage id="development.text.1"/><br/> <FormattedMessage id="development.text.2"/>

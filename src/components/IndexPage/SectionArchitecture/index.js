@@ -8,7 +8,7 @@ export default class SectionArchitecture extends React.Component {
             <div className="container">
                 <span className="icon icon-square-2"/>
                 <div className="section-title">
-                    <FormattedMessage id="architecture.title"/>
+                    <FormattedMessage id="architecture.title" values={{o:(<span className="section-title-bright">O</span>), r:(<span className="section-title-bright">R</span>), g:(<span className="section-title-bright">构</span>)}}/>
                 </div>
                 <div className="architecture-wrap">
                     <div className="row">

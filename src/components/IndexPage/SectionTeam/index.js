@@ -55,16 +55,13 @@ export default class SectionTeam extends React.Component {
                 })
             })
         })
-
-
-
     }
 
     render() {
         return (
             <div className="container">
                 <div className="section-title">
-                    <FormattedMessage id="team.title"/>
+                    <FormattedMessage id="team.title" values={{a:(<span className="section-title-bright">A</span>),t:(<span className="section-title-bright">T</span>),d:(<span className="section-title-bright">队</span>)}}/>
                 </div>
                 <div className="row">
                     <div className="icon-left-wrap">
