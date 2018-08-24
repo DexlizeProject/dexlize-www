@@ -15,6 +15,7 @@ import SectionRoadmap from '../components/IndexPage/SectionRoadmap'
 import SectionTeam from '../components/IndexPage/SectionTeam'
 import SectionPartners from '../components/IndexPage/SectionPartners'
 import SectionSubscribe from '../components/IndexPage/SectionSubscribe'
+import $ from 'jquery'
 import helper from "../helpers";
 
 class IndexPage extends React.Component {
@@ -27,28 +28,27 @@ class IndexPage extends React.Component {
 
     componentDidMount() {
         //Change character color in section title
-        // if (this.state.language === 'en') {
-        //     document.getElementsByClassName('section-features')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-features')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2])
-        //     document.getElementsByClassName('section-architecture')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-architecture')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 11])
-        //     document.getElementsByClassName('section-ecosystem')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-ecosystem')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 11])
-        //     document.getElementsByClassName('section-token')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-token')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [3])
-        //     document.getElementsByClassName('section-development')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-development')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2])
-        //     document.getElementsByClassName('section-roadmap')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-roadmap')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2], 'roadmap-title-active')
-        //     document.getElementsByClassName('section-team')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-team')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 7])
-        //     document.getElementsByClassName('section-partners')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-partners')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 13])
-        //     document.getElementsByClassName('section-subscribe')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-subscribe')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 5])
-        //
-        // } else {
-        //     document.getElementsByClassName('section-features')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-features')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 10])
-        //     document.getElementsByClassName('section-architecture')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-architecture')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 10])
-        //     document.getElementsByClassName('section-ecosystem')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-ecosystem')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 10])
-        //     document.getElementsByClassName('section-token')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-token')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [3, 7])
-        //     document.getElementsByClassName('section-development')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-development')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [1])
-        //     document.getElementsByClassName('section-roadmap')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-roadmap')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [1], 'roadmap-title-active')
-        //     document.getElementsByClassName('section-team')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-team')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [1])
-        //     document.getElementsByClassName('section-partners')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-partners')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [1, 8])
-        //     document.getElementsByClassName('section-subscribe')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-subscribe')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [1])
-        // }
+        if (this.state.language === 'en') {
+            $('.section-features .section-tile').html(helper.changeChracterColor($('.section-features .section-title span').text(), [2]))
+            $('.section-architecture .section-tile').html(helper.changeChracterColor($('.section-architecture .section-title span').text(), [2, 11]))
+            $('.section-ecosystem .section-tile').html(helper.changeChracterColor($('.section-ecosystem .section-title span').text(), [2,11]))
+            $('.section-token .section-tile').html(helper.changeChracterColor($('.section-token .section-title span').text(), [3]))
+            $('.section-development .section-tile').html(helper.changeChracterColor($('.section-development .section-title span').text(), [2]))
+            $('.section-roadmap .section-tile').html(helper.changeChracterColor($('.section-roadmap .section-title span').text(), [2], 'roadmap-title-active'))
+            $('.section-team .section-tile').html(helper.changeChracterColor($('.section-team .section-title span').text(), [2, 7]))
+            $('.section-partners .section-tile').html(helper.changeChracterColor($('.section-partners .section-title span').text(), [2, 13]))
+            $('.section-subscribe .section-tile').html(helper.changeChracterColor($('.section-subscribe .section-title span').text(), [2, 5]))
+        } else {
+            // document.getElementsByClassName('section-features')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-features')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 10])
+            // document.getElementsByClassName('section-architecture')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-architecture')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 10])
+            // document.getElementsByClassName('section-ecosystem')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-ecosystem')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [2, 10])
+            // document.getElementsByClassName('section-token')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-token')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [3, 7])
+            // document.getElementsByClassName('section-development')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-development')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [1])
+            // document.getElementsByClassName('section-roadmap')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-roadmap')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [1], 'roadmap-title-active')
+            // document.getElementsByClassName('section-team')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-team')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [1])
+            // document.getElementsByClassName('section-partners')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-partners')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [1, 8])
+            // document.getElementsByClassName('section-subscribe')[0].getElementsByClassName('section-title')[0].innerHTML = helper.changeChracterColor(document.getElementsByClassName('section-subscribe')[0].getElementsByClassName('section-title')[0].getElementsByTagName('span')[0].innerText, [1])
+        }
 
         new fullpage('#fullpage', {
             licenseKey: '887B9707-133D4802-8542264F-8795D5AA',
