@@ -10,33 +10,6 @@ export default class SectionTeam extends React.Component {
             isAnimating: false
         }
     }
-
-    slideLeft() {
-
-    }
-
-    slideRight() {
-        let me = this;
-        if(this.state.isAnimating === true){
-            return false;
-        }
-        const groupWidth = $('.groups').width();
-        const currentGroup = $('.group-1').css('display') === 'block' ? '1' : '2'
-        this.setState({
-            isAnimating: true
-        })
-        $('.group-' + currentGroup).animate({
-            left: groupWidth
-        }, 800, function () {
-            $(this).hide();
-        }).siblings().show().css({left: -groupWidth}).animate({
-            left: 0
-        }, 800, function(){
-            me.setState({
-                isAnimating: false
-            })
-        })
-    }
     componentDidMount() {
         let me = this;
         $('.icon-left-wrap').click(function(){
