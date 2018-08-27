@@ -1,6 +1,6 @@
 module.exports = {
-    'title': 'Dexlize Webpage',
-    'welcome': 'Welcome to Dexlize',
+    'title': 'Dexlize - DEX-lize Everything',
+    'description': 'Dexlize is a decentralized exchange infrastructure architecture, which allows all entities, including machines, to create their own trading markets, and provides unified access to the Dexlize Protocol external trading interface.',
     'nav.whatis': 'What is',
     'nav.features': 'Features',
     'nav.architecture': 'Architecture',

@@ -1,6 +1,6 @@
 module.exports = {
     'title': 'Dexlize 网站',
-    'welcome': '欢迎来到 Dexlize',
+    'description': 'Dexlize 是一个去中心化的交易基础设施架构，它让每个人或机器都可以创建属于自己的交易市场，并统一接入Dexlize Protocol对外的交易接口。通过Dexlize，我们将极大地扩充现有的中心化交易市场，并建立起属于每个人或机器自己的去中心化交易场景，应用于实践之中。',
     'nav.whatis': '是什么',
     'nav.features': '特点',
     'nav.architecture': '架构',
