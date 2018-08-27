@@ -20,7 +20,7 @@ export default class SectionRoadmap extends React.Component{
                         <div className="timeline-item-active">
                             <span className="icon icon-triangle"/>
                             <div className="timeline-upcoming-date">2017 Dec</div>
-                            <div className="timeline-upcoming-event">去中心化交易解决方案研究</div>
+                            <div className="timeline-upcoming-event"><FormattedMessage id="roadmap.item1"/></div>
                         </div>
                     </div>
                     <div className="timeline-item timeline-item-second">
@@ -32,7 +32,7 @@ export default class SectionRoadmap extends React.Component{
                         <div className="timeline-item-active">
                             <span className="icon icon-triangle"/>
                             <div className="timeline-upcoming-date">2018 July</div>
-                            <div className="timeline-upcoming-event">EOS钱包版本1.0发布，支持 EOS 资产转移</div>
+                            <div className="timeline-upcoming-event"><FormattedMessage id="roadmap.item2"/></div>
                         </div>
                     </div>
                     <div className="timeline-item">
@@ -44,7 +44,7 @@ export default class SectionRoadmap extends React.Component{
                         <div className="timeline-item-active">
                             <span className="icon icon-triangle"/>
                             <div className="timeline-upcoming-date">2018 July</div>
-                            <div className="timeline-upcoming-event">起草白皮书</div>
+                            <div className="timeline-upcoming-event"><FormattedMessage id="roadmap.item3"/></div>
                         </div>
                     </div>
                     <div className="timeline-item">
@@ -56,7 +56,7 @@ export default class SectionRoadmap extends React.Component{
                         <div className="timeline-item-active">
                             <span className="icon icon-triangle"/>
                             <div className="timeline-upcoming-date">2018 Q3</div>
-                            <div className="timeline-upcoming-event">去中心化交易协议(Dex) Alpha 版本发布</div>
+                            <div className="timeline-upcoming-event"><FormattedMessage id="roadmap.item4"/></div>
                         </div>
                     </div>
                     <div className="timeline-item">
@@ -68,7 +68,7 @@ export default class SectionRoadmap extends React.Component{
                         <div className="timeline-item-active">
                             <span className="icon icon-triangle"/>
                             <div className="timeline-upcoming-date">2018 Q4</div>
-                            <div className="timeline-upcoming-event">Dex 的 Beta 测试版发布，Beta 版测试周期，建设周边交易生态系统</div>
+                            <div className="timeline-upcoming-event" style={{fontSize: '14px'}}><FormattedMessage id="roadmap.item5"/></div>
                         </div>
                     </div>
                     <div className="timeline-item">
@@ -79,7 +79,7 @@ export default class SectionRoadmap extends React.Component{
                         <div className="timeline-item-active">
                             <span className="icon icon-triangle"/>
                             <div className="timeline-upcoming-date">2019 Jan</div>
-                            <div className="timeline-upcoming-event">Dex 在 EOS 主网上运行，并完全集成到 BitPortal App 中</div>
+                            <div className="timeline-upcoming-event"><FormattedMessage id="roadmap.item6"/></div>
                         </div>
                     </div>
                 </div>
