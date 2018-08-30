@@ -10,46 +10,57 @@ export default class SectionTeam extends React.Component {
             isAnimating: false
         }
     }
+
     componentDidMount() {
         let me = this;
-        $('.icon-left-wrap').click(function(){
-            if(me.state.isAnimating === true){
+        $('.icon-right-wrap').click(function () {
+            if (me.state.isAnimating === true) {
                 return false;
             }
+
             const groupWidth = $('.groups').width();
-            const currentGroup = $('.group-1').css('display') === 'block' ? '1' : '2'
+            const currentGroup = $('.groups .active').index();
+            const nextGroup = currentGroup === 2 ? 0 : currentGroup + 1;
             me.setState({
                 isAnimating: true
-            })
-            $('.group-' + currentGroup).animate({
+            });
+            console.log()
+            $('.groups>div:eq(' + currentGroup + ')').animate({
                 left: -groupWidth
             }, 800, function () {
-                $(this).hide();
-            }).siblings().show().css({left: groupWidth}).animate({
+                $(this).removeClass('active');
+            });
+
+            $('.groups>div:eq(' + nextGroup + ')').show().css({left: groupWidth}).animate({
                 left: 0
-            }, 800, function(){
+            }, 800, function () {
+                $(this).addClass('active')
+                console.log('set animate state')
                 me.setState({
                     isAnimating: false
                 })
             })
         })
 
-        $('.icon-right-wrap').click(function(){
-            if(me.state.isAnimating === true){
+        $('.icon-left-wrap').click(function () {
+            if (me.state.isAnimating === true) {
                 return false;
             }
             const groupWidth = $('.groups').width();
-            const currentGroup = $('.group-1').css('display') === 'block' ? '1' : '2'
+            const currentGroup = $('.groups .active').index();
+            const nextGroup = currentGroup === 0 ? 2 : currentGroup - 1;
             me.setState({
                 isAnimating: true
             })
-            $('.group-' + currentGroup).animate({
+            $('.groups>div:eq(' + currentGroup + ')').animate({
                 left: groupWidth
             }, 800, function () {
-                $(this).hide();
-            }).siblings().show().css({left: -groupWidth}).animate({
+                $(this).removeClass('active');
+            })
+            $('.groups>div:eq(' + nextGroup + ')').show().css({left: -groupWidth}).animate({
                 left: 0
-            }, 800, function(){
+            }, 800, function () {
+                $(this).addClass('active');
                 me.setState({
                     isAnimating: false
                 })
@@ -61,14 +72,18 @@ export default class SectionTeam extends React.Component {
         return (
             <div className="container">
                 <div className="section-title">
-                    <FormattedMessage id="team.title" values={{a:(<span className="section-title-bright">A</span>),t:(<span className="section-title-bright">T</span>),d:(<span className="section-title-bright">队</span>)}}/>
+                    <FormattedMessage id="team.title" values={{
+                        a: (<span className="section-title-bright">A</span>),
+                        t: (<span className="section-title-bright">T</span>),
+                        d: (<span className="section-title-bright">队</span>)
+                    }}/>
                 </div>
                 <div className="row">
                     <div className="icon-left-wrap">
                         <span className="icon icon-left"/>
                     </div>
                     <div className="groups">
-                        <div className="group-1 row">
+                        <div className="group-1 row active">
                             <div className="col-md-2 col-xs-4">
                                 <div className="team-item">
                                     <div className="team-item-img">
@@ -227,6 +242,36 @@ export default class SectionTeam extends React.Component {
                                     </div>
                                 </div>
                             </div>
+                            <div className="col-md-2 col-sm-3 col-xs-4">
+                                <div className="team-item">
+                                    <div className="team-item-img">
+                                        <img src="/static/icon/team/team-12.png"/>
+                                    </div>
+                                    <div className="team-item-name">
+                                        <FormattedMessage id="team.12.name"/>
+                                    </div>
+                                    <div className="team-item-title">
+                                        <FormattedMessage id="team.12.title"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className="group-3 row">
+                            <div className="col-md-2 col-sm-3 col-xs-4">
+                                <div className="team-item">
+                                    <div className="team-item-img">
+                                        <img src="/static/icon/team/team-13.png"/>
+                                    </div>
+                                    <div className="team-item-name">
+                                        <FormattedMessage id="team.13.name"/>
+                                    </div>
+                                    <div className="team-item-title">
+                                        <FormattedMessage id="team.13.title"/>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div className="col-md-2 col-sm-3 col-xs-4">
                                 <div className="team-item">
                                     <div className="team-item-img-empty">
