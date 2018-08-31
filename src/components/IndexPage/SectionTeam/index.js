@@ -125,6 +125,8 @@ export default class SectionTeam extends React.Component {
                                     <div className="team-item-title">
                                         <FormattedMessage id="team.3.title"/>
                                         <br/> <FormattedMessage id="team.3.title2"/>
+                                        <br/> <FormattedMessage id="team.3.title3"/>
+
                                     </div>
                                 </div>
                             </div>
@@ -183,8 +185,8 @@ export default class SectionTeam extends React.Component {
                                     </div>
                                     <div className="team-item-title">
                                         <FormattedMessage id="team.7.title"/>
-                                        <br/>
-                                        <FormattedMessage id="team.7.title2"/>
+                                        <br/><FormattedMessage id="team.7.title2"/>
+                                        <br/><FormattedMessage id="team.7.title3"/>
                                     </div>
                                 </div>
                             </div>
