@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import {withIntl, Link} from '../i18n'
+import {withIntl} from '../i18n'
 
 import Footer from '../components/Footer'
 
@@ -12,11 +12,9 @@ import SectionEcosystem from '../components/IndexPage/SectionEcosystem'
 import SectionToken from '../components/IndexPage/SectionToken'
 import SectionDevelopment from '../components/IndexPage/SectionDevelopment'
 import SectionRoadmap from '../components/IndexPage/SectionRoadmap'
-import SectionTeam from '../components/IndexPage/SectionTeam'
+// import SectionTeam from '../components/IndexPage/SectionTeam'
 import SectionPartners from '../components/IndexPage/SectionPartners'
 import SectionSubscribe from '../components/IndexPage/SectionSubscribe'
-import $ from 'jquery'
-import helper from "../helpers";
 
 class IndexPage extends React.Component {
     constructor(props) {
@@ -70,9 +68,9 @@ class IndexPage extends React.Component {
                     <div className="section section-roadmap fp-no-scroll">
                         <SectionRoadmap/>
                     </div>
-                    <div className="section section-team fp-no-scroll">
-                        <SectionTeam/>
-                    </div>
+                    {/*<div className="section section-team fp-no-scroll">*/}
+                        {/*<SectionTeam/>*/}
+                    {/*</div>*/}
                     <div className="section section-partners fp-no-scroll">
                         <SectionPartners/>
                     </div>
