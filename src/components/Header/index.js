@@ -38,7 +38,7 @@ export default class Header extends React.Component {
                             <li data-menuanchor="token"><a href="#token"><FormattedMessage id="nav.token"/></a></li>
                             <li data-menuanchor="development"><a href="#development"><FormattedMessage id="nav.nextSteps"/></a></li>
                             <li data-menuanchor="roadmap"><a href="#roadmap"><FormattedMessage id="nav.roadmap"/></a></li>
-                            <li data-menuanchor="team"><a href="#team"><FormattedMessage id="nav.team"/></a></li>
+                            {/*<li data-menuanchor="team"><a href="#team"><FormattedMessage id="nav.team"/></a></li>*/}
                             <li data-menuanchor="partners"><a href="#partners"><FormattedMessage id="nav.partners"/></a></li>
                             <li data-menuanchor="subscribe"><a href="#subscribe"><FormattedMessage id="nav.subscribe"/></a></li>
                             <li className="language-nav-mobile">

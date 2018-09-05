@@ -27,7 +27,7 @@ class IndexPage extends React.Component {
     componentDidMount() {
         new fullpage('#fullpage', {
             licenseKey: '887B9707-133D4802-8542264F-8795D5AA',
-            anchors: ['home', 'whatis', 'features', 'architecture', 'ecosystem', 'token', 'development', 'roadmap', 'team', 'partners', 'subscribe'],
+            anchors: ['home', 'whatis', 'features', 'architecture', 'ecosystem', 'token', 'development', 'roadmap', 'partners', 'subscribe'],
             menu: '#header-nav',
             scrollOverflow: true,
             onLeave: function (origin, destination, direction) {
