@@ -19,14 +19,14 @@ export default class SectionEcosystem extends React.Component{
                         <div className="section-text">
                             <FormattedMessage id="ecosystem.text"/>
                         </div>
-                        <div className="ecosystem-item">
-                            <div className="ecosystem-item-title">
-                                <FormattedMessage id="ecosystem.1.title"/>
-                            </div>
-                            <div className="ecosystem-item-text">
-                                <FormattedMessage id="ecosystem.1.text"/>
-                            </div>
-                        </div>
+                        {/*<div className="ecosystem-item">*/}
+                            {/*<div className="ecosystem-item-title">*/}
+                                {/*<FormattedMessage id="ecosystem.1.title"/>*/}
+                            {/*</div>*/}
+                            {/*<div className="ecosystem-item-text">*/}
+                                {/*<FormattedMessage id="ecosystem.1.text"/>*/}
+                            {/*</div>*/}
+                        {/*</div>*/}
                         <div className="ecosystem-item">
                             <div className="ecosystem-item-title">
                                 <FormattedMessage id="ecosystem.2.title"/>

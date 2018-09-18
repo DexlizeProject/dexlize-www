@@ -61,7 +61,7 @@ module.exports = {
     'roadmap.item3': '起草白皮书',
     'roadmap.item4': '去中心化交易协议(DEX)Alpha版本发布',
     'roadmap.item5': 'Dex 的 Beta 测试版发布，Beta 版测试周期，建设周边交易生态系统',
-    'roadmap.item6': 'Dex 在 EOS 主网上运行，并完全集成到 BitPortal App 中',
+    'roadmap.item6': 'Dex 在 EOS 主网上运行',
     'team.title': '团{d}介绍',
     'team.1.name': '程剑宇',
     'team.1.title': '首席执行官&创始人',

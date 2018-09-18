@@ -61,7 +61,7 @@ module.exports = {
     'roadmap.item3': 'Whitepaper Draft',
     'roadmap.item4': 'Alpha release of decentralized exchange (DEX)',
     'roadmap.item5': 'Beta release of DEX Beta testing period, comprehensive code audit and appraisal, construction of surrounding exchange ecosystem',
-    'roadmap.item6': 'DEX mainnet live on EOS, complete integration into BitPortal App',
+    'roadmap.item6': 'DEX mainnet live on EOS',
     'team.title': 'TE{a}M IN{t}RODUCTION',
     'team.1.name': 'Jamie Cheng',
     'team.1.title': 'CEO & Founder',
