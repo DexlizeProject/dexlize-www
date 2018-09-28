@@ -12,7 +12,7 @@ module.exports = {
     'nav.partners': 'Partners',
     'nav.subscribe': 'Subscribe',
     'nav.switchLang': 'Switch',
-    'banner.text1': 'DEX-lize Your Exchange',
+    'banner.text1': 'DEX-lize Everything',
     'banner.text2': 'Dexlize',
     'banner.viewWhitepaper': 'View Whitepaper',
     'whatis.title': 'What is',
