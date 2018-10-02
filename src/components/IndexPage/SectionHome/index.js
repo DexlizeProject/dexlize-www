@@ -44,8 +44,8 @@ export default class SectionHome extends React.Component {
         return (
             <div className="container">
                 <div className="banner-title">
-                    <FormattedMessage id="banner.text1"/><span className="section-title-bright">,</span> <br/>
-                    <FormattedMessage id="banner.text2"/><span className="section-title-bright">.</span>
+                    <FormattedMessage id="banner.text.1"/><span className="section-title-bright">,</span> <br/>
+                    <FormattedMessage id="banner.text.2"/><span className="section-title-bright">.</span>
                 </div>
                 <a href={whitePaperLink} target="_blank">
                     <button className="banner-btn"><FormattedMessage id="banner.viewWhitepaper"/></button>
