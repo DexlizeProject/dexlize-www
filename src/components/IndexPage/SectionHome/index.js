@@ -37,9 +37,9 @@ export default class SectionHome extends React.Component {
     render() {
         let whitePaperLink = ''
         if (typeof localStorage !== 'undefined' && localStorage.getItem('language') === 'en') {
-            whitePaperLink = 'https://cdn.dexlize.org/static/WhitePaper-EN-compressed-2018-08-14.pdf'
+            whitePaperLink = 'https://storage.googleapis.com/dexlize-cdn/static/WhitePaper-EN-compressed-2018-08-14.pdf'
         } else {
-            whitePaperLink = 'https://cdn.dexlize.org/static/WhitePaper-ZH-compressed-2018-08-14.pdf'
+            whitePaperLink = 'https://storage.googleapis.com/dexlize-cdn/static/WhitePaper-ZH-compressed-2018-08-14.pdf'
         }
         return (
             <div className="container">
