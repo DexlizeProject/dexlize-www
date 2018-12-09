@@ -6,6 +6,15 @@ gatsby develop #开发环境
 gatsby build #打包资源
 ```
 
+## Deploy
+
+1. Install and config firebase
+2. choose your project
+3. run:
+```sh
+firebase deploy
+```
+
 ## 架构
 
 使用 gatsby 开发，并二次开发了fullpage，使其达到项目的满屏滚动需求。
