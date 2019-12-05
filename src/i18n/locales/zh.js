@@ -12,7 +12,7 @@ module.exports = {
     'nav.partners': '伙伴',
     'nav.subscribe': '订阅',
     'nav.switchLang': '切换语言',
-    'banner.text.1': '去中心化交易你的资产,',
+    'banner.text.1': '去中心化交易你的资产',
     'banner.text.2': 'DEXlize',
     'banner.viewWhitepaper': '查看白皮书',
     'whatis.title': '什么是',

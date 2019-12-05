@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "dexlize-prod": {
+      "hosting": {
+        "www": [
+          "dexlize-prod"
+        ]
+      }
+    }
+  }
+}
