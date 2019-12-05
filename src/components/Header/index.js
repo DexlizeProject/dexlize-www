@@ -16,11 +16,11 @@ export default class Header extends React.Component {
         }
     }
 
-    hideHeaderNav() {
-        if(typeof window !== 'undefined'){
-            $('.header-nav-wrap').hide();
-        }
-    }
+    // hideHeaderNav() {
+    //     if(typeof window !== 'undefined'){
+    //         $('.header-nav-wrap').hide();
+    //     }
+    // }
 
     render() {
         return (
@@ -29,7 +29,7 @@ export default class Header extends React.Component {
                     <a href="#home">
                         <span className="icon icon-logo"/>
                     </a>
-                    <div className="header-nav-wrap" onClick={this.hideHeaderNav.bind(this)}>
+                    <div className="header-nav-wrap">
                         <ul className="header-nav" id="header-nav">
                             <li data-menuanchor="whatis"><a href="#whatis"><FormattedMessage id="nav.whatis"/>?</a></li>
                             <li data-menuanchor="features"><a href="#features"><FormattedMessage id="nav.features"/></a></li>
