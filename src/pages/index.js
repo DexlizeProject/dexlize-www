@@ -74,7 +74,7 @@ class IndexPage extends React.Component {
                     <div className="section section-partners fp-no-scroll">
                         <SectionPartners/>
                     </div>
-                    <div className="section section-subscribe fp-no-scroll">}
+                    <div className="section section-subscribe fp-no-scroll">
                         <SectionSubscribe/>
                     </div>
                     <Footer />

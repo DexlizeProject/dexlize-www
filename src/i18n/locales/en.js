@@ -1,6 +1,6 @@
 module.exports = {
     'title': 'Dexlize - DEX-lize Your Asset',
-    'description': 'Dexlize is a aggregative decentralized exchange. It adopts aggregation, makeret-maker, incetive etc.. to offer the best liquidity and implement best price discovery mechanism.',
+    'description': 'Dexlize is a aggregative decentralized exchange protocol. It adopts aggregation, market-maker, incentive etc.. to offer the best liquidity and implement best price discovery mechanism.',
     'nav.whatis': 'What is',
     'nav.features': 'Features',
     'nav.architecture': 'Architecture',
@@ -16,7 +16,7 @@ module.exports = {
     'banner.text.2': 'Dexlize',
     'banner.viewWhitepaper': 'View Whitepaper',
     'whatis.title': 'What is',
-    'whatis.text': 'Dexlize is a aggregative decentralized exchange. It adopts aggregation, makeret-maker, incetive etc.. to offer the best liquidity and implement best price discovery mechanism.',
+    'whatis.text': 'Dexlize is a aggregative decentralized exchange protocol. It adopts aggregation, market-maker, incentive etc.. to offer the best liquidity and implement best price discovery mechanism.',
     'features.title': 'FE{a}TURES',
     'features.1.title': 'Open Exchange Market',
     'features.1.text': 'Everyone can create their own decentralized exchange market through the Dexlize Protocol and exercise total control over the market price and matching orders. ',
