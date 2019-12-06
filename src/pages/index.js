@@ -13,8 +13,8 @@ import SectionToken from '../components/IndexPage/SectionToken'
 import SectionDevelopment from '../components/IndexPage/SectionDevelopment'
 import SectionRoadmap from '../components/IndexPage/SectionRoadmap'
 // import SectionTeam from '../components/IndexPage/SectionTeam'
-// import SectionPartners from '../components/IndexPage/SectionPartners'
-// import SectionSubscribe from '../components/IndexPage/SectionSubscribe'
+import SectionPartners from '../components/IndexPage/SectionPartners'
+import SectionSubscribe from '../components/IndexPage/SectionSubscribe'
 
 class IndexPage extends React.Component {
     constructor(props) {
@@ -59,25 +59,25 @@ class IndexPage extends React.Component {
                     <div className="section section-ecosystem fp-no-scroll">
                         <SectionEcosystem/>
                     </div>
-                    <div className="section section-token fp-noscroll">
+                    {/* <div className="section section-token fp-noscroll">
                         <SectionToken/>
-                    </div>
+                    </div> */}
                     <div className="section section-development fp-no-scroll">
                         <SectionDevelopment/>
                     </div>
                     <div className="section section-roadmap fp-no-scroll">
                         <SectionRoadmap/>
                     </div>
-                    {/*<div className="section section-team fp-no-scroll">*/}
-                        {/*<SectionTeam/>*/}
-                    {/*</div>*/}
-                    {/*<div className="section section-partners fp-no-scroll">*/}
-                        {/*<SectionPartners/>*/}
-                    {/*</div>*/}
-                    {/*<div className="section section-subscribe fp-no-scroll">*/}
-                        {/*<SectionSubscribe/>*/}
-                    {/*</div>*/}
-                    {/*<Footer/>*/}
+                    {/* <div className="section section-team fp-no-scroll">
+                        <SectionTeam/>
+                    </div> */}
+                    <div className="section section-partners fp-no-scroll">
+                        <SectionPartners/>
+                    </div>
+                    <div className="section section-subscribe fp-no-scroll">}
+                        <SectionSubscribe/>
+                    </div>
+                    <Footer />
                 </div>
             </Layout>
         )
