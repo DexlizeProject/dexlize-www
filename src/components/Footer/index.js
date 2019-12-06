@@ -25,7 +25,7 @@ export default class Footer extends React.Component{
                             {/*<span className="icon icon-facebook"/>*/}
                         </div>
                         <div className="footer-copyright">
-                            Copyright © ️2018. All Rights Reserved By Dexlize Fondation PTE. LTD.
+                            Copyright © ️2018-2019. All Rights Reserved By Dexlize Fondation PTE. LTD.
                         </div>
                     </div>
                 </footer>
