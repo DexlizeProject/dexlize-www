@@ -18,7 +18,7 @@ export default class Footer extends React.Component{
                             {/*<span className="icon icon-discord"/>*/}
                             {/*<span className="icon icon-wechat"/>*/}
                             {/*<span className="icon icon-telegram"/>*/}
-                            <a href="https://github.com/Dexlize">
+                            <a href="https://github.com/DexlizeProject">
                                 <span className="icon icon-github"/>
                             </a>
                             {/*<span className="icon icon-weibo"/>*/}
