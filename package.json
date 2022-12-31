@@ -6,9 +6,9 @@
   "dependencies": {
     "bootstrap": "^3.4.1",
     "browser-lang": "0.0.1",
-    "gatsby": "^1.9.247",
+    "gatsby": "^5.3.3",
     "gatsby-link": "^1.6.40",
-    "gatsby-plugin-less": "^1.1.8",
+    "gatsby-plugin-less": "^7.3.0",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-sitemap": "^1.2.25",
     "intl": "^1.2.5",
